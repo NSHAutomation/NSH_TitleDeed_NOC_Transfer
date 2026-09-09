@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="sf_AttachmentUpload" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="sf_AttachmentUpload" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_ProcedureNumber" Type="InArgument(x:String)" />
     <x:Property Name="in_ProcedureDate" Type="InArgument(x:String)" />
@@ -62,6 +62,12 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -128,42 +134,49 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="sf_AttachmentUpload" sap:VirtualizedContainerService.HintSize="1494,10062" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="sf_AttachmentUpload" sap:VirtualizedContainerService.HintSize="1494,11209" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="previousComments" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_AttachmentDetails" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="currentIndex" />
       <Variable x:TypeArguments="x:String" Name="parentCaseNumber" />
       <Variable x:TypeArguments="x:String" Name="newOpportunityPropertyNumber" />
+      <Variable x:TypeArguments="upr:ILocalResource" Name="screenshotNewOppourtinityNumber" />
+      <Variable x:TypeArguments="x:String" Name="caseNumber" />
+      <Variable x:TypeArguments="x:String" Name="BusinessException" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="666,10039" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="666,11186" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="632,9956" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="632,11103" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="630,9271" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="630,10418" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Salesforce Home" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,9211" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="24db6533-c2ba-4aa5-b8b3-806c29db93a6" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Salesforce Home" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,10358" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="24db6533-c2ba-4aa5-b8b3-806c29db93a6" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,9016" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,10163" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -286,7 +299,7 @@
                         <uix:TargetAnchorable BrowserURL="https://nshama.my.salesforce.com/500VH00001GzZQfYAN?nooverride=1" ContentHash="_Kwv1-md3EWej_pGa7oWGQ" DesignTimeRectangle="49, 634, 1833, 69" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Action File Name Size Last Modified Created By*' class='list'  tag='TABLE' /&gt;" Guid="d5dd14ca-d104-4a52-9262-dbd5a96cadb4" InformativeScreenshot="905ea2347bdd6a0609dc18b60fc41b8e.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/bHMFO4T5eUaoo-kdHBDn-A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
                       </uix:NExtractDataGeneric.Target>
                     </uix:NExtractDataGeneric>
-                    <If Condition="[dt_AttachmentDetails.AsEnumerable().Any(Function (row) row(&quot;Created By&quot;).ToString().Contains(&quot;Automation User&quot;))]" sap:VirtualizedContainerService.HintSize="560,7738" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If Condition="[dt_AttachmentDetails.AsEnumerable().Any(Function (row) row(&quot;Created By&quot;).ToString().Contains(&quot;Automation User&quot;))]" sap:VirtualizedContainerService.HintSize="560,8885" sap2010:WorkflowViewState.IdRef="If_2">
                       <If.Then>
                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,25" sap2010:WorkflowViewState.IdRef="Sequence_12">
                           <sap:WorkflowViewStateService.ViewState>
@@ -307,7 +320,7 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="558,7583" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="558,8730" sap2010:WorkflowViewState.IdRef="Sequence_13">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -456,7 +469,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </Assign>
-                          <If Condition="[in_TransactionItem(&quot;Buyer Mortgage Required?&quot;).tostring.trim=&quot;Yes&quot;]" DisplayName="Check if buyer mortgage is required" sap:VirtualizedContainerService.HintSize="524,6953" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If Condition="[in_TransactionItem(&quot;Buyer Mortgage Required?&quot;).tostring.trim=&quot;Yes&quot;]" DisplayName="Check if buyer mortgage is required" sap:VirtualizedContainerService.HintSize="524,8100" sap2010:WorkflowViewState.IdRef="If_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -592,7 +605,7 @@
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="522,4905" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="522,6052" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -816,7 +829,7 @@
                                     <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001A5y6zYAB" ContentHash="XfFOtlQpF0SX36bxh0tsBg" DesignTimeRectangle="384, 430, 41, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='A' aaname='*' rowName='New Opportunity Property' /&gt;" Guid="fc37d743-1d61-4ae4-bee6-6ce9182394e8" InformativeScreenshot="883821ac087bcc5d9f2f50c6dbd3b30f.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/pM7XpTX1KkaqSMBUMxK60w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                   </uix:NGetAttributeGeneric.Target>
                                 </uix:NGetAttributeGeneric>
-                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,1288" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,2435" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                   <TryCatch.Try>
                                     <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,429" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                       <sap:WorkflowViewStateService.ViewState>
@@ -824,7 +837,7 @@
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:InterruptibleWhile CurrentIndex="[currentIndex]" DisplayName="While-Awaiting for New Oppourtinity Property Number" sap:VirtualizedContainerService.HintSize="452,369" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1" MaxIterations="30">
+                                      <ui:InterruptibleWhile Condition="[(newOpportunityPropertyNumber=Nothing OrElse newOpportunityPropertyNumber=&quot;&quot;) AndAlso currentIndex&lt;=30]" CurrentIndex="[currentIndex]" DisplayName="While-Awaiting for New Oppourtinity Property Number" sap:VirtualizedContainerService.HintSize="452,369" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1" MaxIterations="30">
                                         <ui:InterruptibleWhile.Body>
                                           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,247" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                             <sap:WorkflowViewStateService.ViewState>
@@ -839,9 +852,6 @@
                                             </uix:NGetAttributeGeneric>
                                           </Sequence>
                                         </ui:InterruptibleWhile.Body>
-                                        <ui:InterruptibleWhile.Condition>
-                                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="(newOpportunityPropertyNumber=Nothing OrElse newOpportunityPropertyNumber=&quot;&quot;) AndAlso currentIndex&lt;=30" />
-                                        </ui:InterruptibleWhile.Condition>
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -857,14 +867,44 @@
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
                                         </ActivityAction.Argument>
-                                        <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="486,628" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                        <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="486,1775" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
+                                          <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[BusinessException]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[exception.Message+Environment.NewLine+exception.Source]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <uix:NTakeScreenshot ContinueOnError="True" DisplayName="Take Screenshot" FileName="New Opportunity Number .png" FileNameMode="[UiPath.UIAutomationNext.Enums.NFileNameMode.DateTime]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,277" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" OutFile="[screenshotNewOppourtinityNumber]" ScopeIdentifier="24db6533-c2ba-4aa5-b8b3-806c29db93a6" Version="V5" />
+                                          <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[caseNumber]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[in_TransactionItem("Case Number").toString]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" UseRichTextEditor="{x:Null}" AttachmentsCollection="[New List(Of String) From {screenshotNewOppourtinityNumber.LocalPath}]" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Greetings,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;New Opportuinity Number not fount for case number: &lt;/SPAN&gt;&lt;SPAN&gt;{0}&lt;/SPAN&gt;&lt;SPAN&gt; &lt;/SPAN&gt;&lt;BR/&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Skipping The Transaction with Business Exception: &lt;/SPAN&gt;&lt;SPAN&gt;{1}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Screenshort Saved Path: &lt;/SPAN&gt;&lt;SPAN&gt;{2}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Thank you&lt;/SPAN&gt;&lt;/P&gt;&quot;, caseNumber, BusinessException, screenshotNewOppourtinityNumber.LocalPath)]" ConnectionMode="Undefined" ContinueOnError="True" DisplayName="Send Outlook Desktop Mail Message" sap:VirtualizedContainerService.HintSize="452,327" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="Title Deed-NOC-Transfer | New Opportunity Number Not Found" To="Automation@nshama.ae" UseISConnection="False">
+                                            <ui:SendOutlookMail.ConnectionDetailsBackupSlot>
+                                              <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="{x:Null}">
+                                                <usau:BackupSlot.BackupValues>
+                                                  <scg:Dictionary x:TypeArguments="umae:ConnectionDetails, scg:List(x:Object)" />
+                                                </usau:BackupSlot.BackupValues>
+                                              </usau:BackupSlot>
+                                            </ui:SendOutlookMail.ConnectionDetailsBackupSlot>
+                                            <ui:SendOutlookMail.Files>
+                                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                            </ui:SendOutlookMail.Files>
+                                          </ui:SendOutlookMail>
+                                          <ui:MoveFile DestinationResource="{x:Null}" PathResource="{x:Null}" ContinueOnError="True" Destination="C:\Users\SalesBot\Desktop\UiPath\CustomerCare\TitleDeed_TrnasferNOC\Exceptions_Screenshots" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="452,193" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[screenshotNewOppourtinityNumber.LocalPath]" />
                                           <ui:WriteCell Cell="[in_ColumnIndex+(in_TransactionNumber+1).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="452,279" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="New pportunity Property No Genetated" WorkbookPath="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Input\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\Report_&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;.xlsx&quot;]" />
-                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[exception.Message+Environment.NewLine+exception.Source]" />
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[exception.Message+Environment.NewLine+exception.Source]" />
                                           <Throw Exception="[new BusinessRuleException(&quot;New Opportunity Property No Genetated&quot;)]" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Throw_2" />
                                         </Sequence>
                                       </ActivityAction>
