@@ -109,7 +109,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="sf_DownloadTransferNocReport" sap:VirtualizedContainerService.HintSize="1913,5291" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="sf_DownloadTransferNocReport" sap:VirtualizedContainerService.HintSize="1494,5291" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="si:FileInfo" Name="reportFileInfo" />
       <Variable x:TypeArguments="x:Boolean" Name="is_ReportExcelExist" />
@@ -192,7 +192,7 @@
                       <OutArgument x:TypeArguments="x:String">[previousReportFileTT]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(reportFileInfo.CreatedDate, "MM/dd/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).ToString("tt")]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(reportFileInfo.LastModifiedDate, "MM/dd/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).ToString("tt")]</InArgument>
                     </Assign.Value>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -213,7 +213,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[is_ReportExcelExist AndAlso (previousReportFileTT = DateTime.Now.ToString(&quot;tt&quot;))]" DisplayName="If-ReportExist" sap:VirtualizedContainerService.HintSize="596,3525" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[is_ReportExcelExist AndAlso previousReportFileTT = DateTime.Now.ToString(&quot;tt&quot;)]" DisplayName="If-ReportExist" sap:VirtualizedContainerService.HintSize="596,3525" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Then>
                 <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="594,226" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
