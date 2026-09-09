@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OSdazvrvIUSZc-d37IZipg" Reference="2ndl-ObV5kmdLRbmcN62Zg/ONA-HDCmLEqKi5y6uYdkwQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH00001EuMBv/e" DesignTimeRectangle="393, 339, 88, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl type='text' tag='INPUT' aaname='DLD Transfer Date' /&gt;" Guid="2ec50d8f-518e-4839-9e94-732f89a23302" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="81ebc8034a2b9708c158397d413fe2c7.jpg" xmlns="">07bPU65TG-EasQWXGiXmdNA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

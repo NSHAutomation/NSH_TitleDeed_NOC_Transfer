@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Mouse Scroll-RelatedCases",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "cRXrB9K_W0KyhJZBJs4IjA",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/cRXrB9K_W0KyhJZBJs4IjA",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
+  "Created": "2026-08-29T18:58:06.6306697Z",
+  "Updated": "2026-08-29T19:19:54.6712024Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nPzd971TzEyjYlKNdxWfig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="oqood.dubailand.gov.ae/certificates/(S(pwdjjxci5mmqwvysuo1zkb2h))/PrintTitleDeed.aspx" DesignTimeRectangle="114, 97, 32, 12" ElementType="Text" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl tag='A' aaname='Export' /&gt;" Guid="1b1326f3-881b-4de5-85ad-0f6a97ac9dba" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='oqood.dubailand.gov.ae/certificates/*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f93c1097dbfea141c5e5dcd7be103863.jpg" xmlns="">0d0s9F12ua0e8WBxXvFKqgA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

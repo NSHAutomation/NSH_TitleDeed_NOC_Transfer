@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Mouse Scroll-Attachments",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "D3XndCBXTkqRg810KSmSnQ",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/D3XndCBXTkqRg810KSmSnQ",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
+  "Created": "2026-08-29T19:11:41.185011Z",
+  "Updated": "2026-08-29T19:19:25.343918Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

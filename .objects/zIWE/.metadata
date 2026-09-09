@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome oqood.dubailand.gov.ae",
+  "Type": "App",
+  "Id": "zIWE4LptHkO5oW_mxS5e-w",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/zIWE4LptHkO5oW_mxS5e-w",
+  "Created": "2026-08-27T06:56:29.9845399Z",
+  "Updated": "2026-08-27T06:56:29.9845399Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

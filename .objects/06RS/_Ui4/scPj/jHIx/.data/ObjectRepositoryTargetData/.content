@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TwD-3ZxCDEG8eolNECTv8A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/00OVH00000CtIa5" DesignTimeRectangle="280, 395, 156, 19" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='xf' type='' tag='SELECT' class='' aaname='*Export File Format' /&gt;" Guid="dc75afb6-a85c-405c-a764-d693829c041f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="163, 395, 97, 12" ElementType="Text" FullSelectorArgument="&lt;webctrl type='' tag='LABEL' class='' aaname='Export File Format' /&gt;" Guid="2541796e-8700-4df2-8104-1bd630c0274a" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="44a7fd667dcf1d2167cd141ee7070cbc.jpg" xmlns="">0WGdoZaC7VEOIF7hk65Ftnw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

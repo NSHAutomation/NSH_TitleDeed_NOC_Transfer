@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Profile",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "7yhEaOfN9UCkKHSzH9pWOA",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/7yhEaOfN9UCkKHSzH9pWOA",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/2t3z9OYdoEm1WBC1MWCmbA",
+  "Created": "2026-08-30T10:48:37.0778159Z",
+  "Updated": "2026-08-30T10:49:00.7598012Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "buildingNumber",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "oQ9oA_6dwkOmfKwtb2haDg",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/oQ9oA_6dwkOmfKwtb2haDg",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/G0ZecurWH0m-tieKFkBDJw",
+  "Created": "2026-08-27T12:12:28.6977841Z",
+  "Updated": "2026-08-27T12:49:04.6549166Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

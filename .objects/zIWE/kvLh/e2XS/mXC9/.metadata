@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Contract List Search",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "mXC9dSdpXkawfz3v8huMLA",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/mXC9dSdpXkawfz3v8huMLA",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/e2XSulnpXkmetjoXPKJjhA",
+  "Created": "2026-08-27T09:48:34.8837885Z",
+  "Updated": "2026-08-27T09:48:34.8837885Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

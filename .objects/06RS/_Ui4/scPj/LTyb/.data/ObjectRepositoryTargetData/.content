@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kKUuXUfuW0eTyZMY2we3og" Reference="2ndl-ObV5kmdLRbmcN62Zg/LTybyTPh-Ei_1nk3M5po0w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/00O/o" DesignTimeRectangle="367, 396, 215, 14" ElementType="Text" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl aaname='Pending transfer Cases' tag='SPAN' /&gt;" Guid="8b3b362b-29c5-4842-9cae-4da3302bf5c5" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="30e623e5d34b2268603b2f861c3f2cd0.jpg" xmlns="">0JJeICZNY9UCPd3HLDuDtQg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

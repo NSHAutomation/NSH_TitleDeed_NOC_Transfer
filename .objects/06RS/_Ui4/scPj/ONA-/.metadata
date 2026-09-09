@@ -1,0 +1,17 @@
+﻿{
+  "Name": "INPUT TransferDate",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "ONA-HDCmLEqKi5y6uYdkwQ",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/ONA-HDCmLEqKi5y6uYdkwQ",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
+  "Created": "2026-08-29T19:42:38.6384173Z",
+  "Updated": "2026-08-29T19:43:14.044077Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

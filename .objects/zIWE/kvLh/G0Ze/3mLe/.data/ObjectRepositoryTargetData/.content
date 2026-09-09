@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7lXNQ7l7w0-uopnwt0fDYw" Reference="2ndl-ObV5kmdLRbmcN62Zg/3mLedhex8kyr9I4NTMg0ag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="oqood.dubailand.gov.ae/Property/PropertiesList.aspx" DesignTimeRectangle="843, 536, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Completed Properties' type='radio' tag='INPUT' /&gt;" Guid="7ff72492-072e-474e-b3bf-c9a214c7dc8f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="e532e60ae5cffef577b30ee755c64aaa.jpg" xmlns="">0qqDAQ2amr0W9-DtAFqeuxQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

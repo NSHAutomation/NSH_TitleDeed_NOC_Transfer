@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QMi3x-rvdU6VjFXV6W_IHA" Reference="2ndl-ObV5kmdLRbmcN62Zg/944e4mfbakmSi9fDEwAzCg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="oqood.dubailand.gov.ae/OqoodPortal/PortalWorkspace.aspx" DesignTimeRectangle="489, 417, 285, 212" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='imgDsr' tag='IMG' aaname='*' /&gt;" Guid="19bc8794-17ab-46d4-948d-d301746c2137" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal Workspace' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="785e8e32dd38b30e29ae0e07357503d0.jpg" xmlns="">00_52m8ltLUquUlkcOXyRfQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

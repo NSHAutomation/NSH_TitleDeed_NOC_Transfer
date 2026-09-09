@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Iy8A_TetiEK4r0DCcSj3YQ" Reference="2ndl-ObV5kmdLRbmcN62Zg/WH8j-U6eW0yJzV7kccX3Xw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH00001EuMBv/e" DesignTimeRectangle="393, 379, 177, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl type='text' tag='INPUT' aaname='Procedure Number' /&gt;" Guid="bb5b0294-8e0c-4c24-9a92-9dd9fd5c9ab8" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="84fbdca657e9632f4a5cfa7c3852cef2.jpg" xmlns="">0rPKFsM5F7U-mdBH2JcKLkA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

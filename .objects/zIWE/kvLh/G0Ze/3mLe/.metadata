@@ -1,0 +1,13 @@
+﻿{
+  "Name": "CompletedProperties",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "3mLedhex8kyr9I4NTMg0ag",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/3mLedhex8kyr9I4NTMg0ag",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/G0ZecurWH0m-tieKFkBDJw",
+  "Created": "2026-08-27T09:48:21.7894688Z",
+  "Updated": "2026-08-27T09:48:21.7894688Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

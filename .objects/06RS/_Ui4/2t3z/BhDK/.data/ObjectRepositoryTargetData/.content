@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xj_2PF-dVEm90Bo3NcCGFQ" Reference="2ndl-ObV5kmdLRbmcN62Zg/BhDKAe1QiEmtaiKofTgs7Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/_ui/identity/verification/method/UnifiedPasskeyVerificationUi/e" DesignTimeRectangle="720, 191, 496, 64" ElementType="ListItem" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;ctrl name='Sign in using a saved passkey' role='dialog' /&gt;&lt;ctrl name='automation@nshama.ae From Microsoft Password Manager' role='list item' text='*@nshama.ae*' /&gt;" Guid="142b27ae-bcd6-4b46-9ab6-fb1c8609e397" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="2c60d609449fdaef388307b610087741.jpg" xmlns="">0BWF-CTAeuUGuhWnZEeZNPg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

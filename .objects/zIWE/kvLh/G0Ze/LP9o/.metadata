@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Off-PlanProperties",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "LP9omS40n0u0Cop1GjdW9w",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/LP9omS40n0u0Cop1GjdW9w",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/G0ZecurWH0m-tieKFkBDJw",
+  "Created": "2026-08-27T08:38:51.5764892Z",
+  "Updated": "2026-08-27T08:39:40.9265338Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

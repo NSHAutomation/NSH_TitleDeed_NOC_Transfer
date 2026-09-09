@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GesICFvds0SjSOPDlHInYw" Reference="2ndl-ObV5kmdLRbmcN62Zg/Kl_G_P07n06Qp6GsD_O61g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/home/home.jsp" DesignTimeRectangle="37, 212, 36, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='home_Tab' tag='A' aaname='Home' /&gt;" Guid="6111050c-5429-43ec-b6f0-45cfdd8d4eb9" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="34205aebf00c1182657d74ef393b8f9c.jpg" xmlns="">0OSihYY6Tc0aCGcGA0GNKzw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

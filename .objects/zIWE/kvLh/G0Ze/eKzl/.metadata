@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Load Buildings",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "eKzlfDoVO0GUBj_q_mhMgg",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/eKzlfDoVO0GUBj_q_mhMgg",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/G0ZecurWH0m-tieKFkBDJw",
+  "Created": "2026-08-29T18:22:51.4029861Z",
+  "Updated": "2026-08-29T18:22:51.4029861Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

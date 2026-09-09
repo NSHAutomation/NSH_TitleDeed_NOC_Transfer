@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click 'email'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Kl_G_P07n06Qp6GsD_O61g",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/Kl_G_P07n06Qp6GsD_O61g",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/2t3z9OYdoEm1WBC1MWCmbA",
+  "Created": "2026-08-27T06:44:05.5524324Z",
+  "Updated": "2026-08-27T06:44:05.5524324Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

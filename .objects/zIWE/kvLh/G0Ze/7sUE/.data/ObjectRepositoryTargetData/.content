@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_pdY7HU6X0WG6cjP9T5ZdA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="oqood.dubailand.gov.ae/Property/PropertiesList.aspx" DesignTimeRectangle="693, 531, 198, 25" ElementType="InputBox" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl name='ctl00$ctl00$ctl00$PageContents$PageContents$MainSearchContents$ucPropertySearch$txtBuildingName' tag='INPUT' type='text' /&gt;" Guid="62399c8b-9a5e-4e59-bf7d-0ca7e151268d" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="d7b278af67395dbe4b40797bc6a2979b.jpg" xmlns="">0GLoNMOQzHkqD8JUhhqCLQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

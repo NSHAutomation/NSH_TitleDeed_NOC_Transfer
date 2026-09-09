@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tKTzAfRcx0ao_MNmjpFoCg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="oqood.dubailand.gov.ae/certificates/(S(pwdjjxci5mmqwvysuo1zkb2h))/PrintTitleDeed.aspx" DesignTimeRectangle="451, 464, 88, 26" ElementType="Button" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;wnd title='&amp;amp;Save' aaname='Save' /&gt;" Guid="925619a4-0cc5-4e20-8cca-be121c2f4973" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='*' title='Save As' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="dc37f864662ef6efa62811aa429d9e7d.jpg" xmlns="">0yBGhybhsh0ip4neupewgGg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

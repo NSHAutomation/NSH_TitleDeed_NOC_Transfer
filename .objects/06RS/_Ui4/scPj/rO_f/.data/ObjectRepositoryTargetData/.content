@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pfT7cS01wkC6bMjruOVhIg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH000013tKdOYAU" DesignTimeRectangle="384, 663, 565, 56" ElementVisibilityArgument="Interactive" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tag='TR' visibleinnertext='Internal Comments*' /&gt;&lt;webctrl tag='DIV' /&gt;" Guid="95d2893d-660b-4a9e-ab20-296fcfa63572" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="42, 660, 332, 63" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Internal Comments' /&gt;" Guid="8ee5d538-24fe-4bba-b173-4ffeda8a6a43" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5eb324315376333e4540916e9ef7a3bc.jpg" xmlns="">08d2Rlb-sS0mDTddYYrokRw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

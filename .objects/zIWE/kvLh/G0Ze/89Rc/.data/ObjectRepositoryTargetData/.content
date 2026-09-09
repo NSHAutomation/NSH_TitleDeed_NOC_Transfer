@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="L3PsiEXBrkq9cnLODFgnHA" Reference="2ndl-ObV5kmdLRbmcN62Zg/89RcTOjjlkW7-3-REF-pkA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="oqood.dubailand.gov.ae/Property/PropertiesList.aspx" DesignTimeRectangle="1386, 756, 16, 16" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='INPUT' aaname='Owners' tableRow='{0}' /&gt;&quot;,counter.ToString)]" Guid="47cccc4a-3907-4636-88d9-b10f563476e1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="747b0ea9348bd4999bd1e36931ef3aa6.jpg" xmlns="">0yCq-EjS_8E-LbYf2fycN1w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

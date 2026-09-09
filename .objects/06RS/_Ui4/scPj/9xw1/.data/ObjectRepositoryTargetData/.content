@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="d_qF3VXapkGQPEhccswMjQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/home/home.jsp" DesignTimeRectangle="314, 212, 49, 15" ElementType="Text" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl parentid='report_Tab' tag='A' aaname='Reports' /&gt;" Guid="a8edd0f3-338b-4c30-8ea1-c5ec54ad6d5c" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="621d1b849ca11054ae57f604fba864e6.jpg" xmlns="">0M5xiQtWu8kqKiw9viij-bg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

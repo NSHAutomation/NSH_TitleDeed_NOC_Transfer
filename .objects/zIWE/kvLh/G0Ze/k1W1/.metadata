@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Villa",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "k1W13ZCRa0KCQe3NlQf7uA",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/k1W13ZCRa0KCQe3NlQf7uA",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/G0ZecurWH0m-tieKFkBDJw",
+  "Created": "2026-08-27T09:25:33.2557416Z",
+  "Updated": "2026-08-27T09:25:40.1288334Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

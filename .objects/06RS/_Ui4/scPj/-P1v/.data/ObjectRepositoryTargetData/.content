@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="M1I-6A7HXUmmKKwSO3-ZAA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH000013tKdOYAU" DesignTimeRectangle="75, 476, 517, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H3' aaname='Case Parties' /&gt;" Guid="158d6f55-fe64-4bbe-9c94-1a69c5b88a0e" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Case: 01167028 ~ Salesforce - Unlimited Edition' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="336327c5c378f6623bdedf078ce84e64.jpg" xmlns="">0Tr6CtJvm8kqs_soA7oDlUg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
