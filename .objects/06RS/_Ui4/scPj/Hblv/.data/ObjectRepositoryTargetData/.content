@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="rZWDwvSiq0y6J_EeisSx0g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="zHmK4pmWVkivC9fgc10UIw" Reference="2ndl-ObV5kmdLRbmcN62Zg/HblvimUNzk2v-AMaQogozg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
     <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH00001IZQPvYAP" DesignTimeRectangle="802, 326, 333, 90" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl class='' matching:class='fuzzy' fuzzylevel:class='0.0' tag='TEXTAREA' type='text' aaname='*' /&gt;" Guid="cf87af5f-3f25-4cb2-a2f2-5d927ecb187c" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="3949b7896838e3f59b3fe40fa4e29ad5.jpg" xmlns="">0evJ4xNIDHkyQ2AI5OcPTXA</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="bfb2849fe37ee085f1de514332605ac9.jpg" xmlns="">08Xq7Ojt5zUe2hVTZAVnj2Q</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">TypeInto</x:String>
   </ObjectRepositoryTargetData.Data>

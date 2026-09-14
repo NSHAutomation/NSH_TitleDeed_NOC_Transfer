@@ -131,7 +131,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="oqood_DownloadTitleDeed" sap:VirtualizedContainerService.HintSize="1913,9559" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="oqood_DownloadTitleDeed" sap:VirtualizedContainerService.HintSize="1913,5374" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="procedureType" />
       <Variable x:TypeArguments="x:String" Name="certificateNumber" />
@@ -146,21 +146,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="702,9536" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence sap:VirtualizedContainerService.HintSize="702,5351" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="668,9453" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="668,5268" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="666,8773" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="666,4588" sap2010:WorkflowViewState.IdRef="Sequence_16">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -202,27 +202,19 @@
                 </Sequence>
               </If.Else>
             </If>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome oqood.dubailand.gov.ae" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="632,8135" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome oqood.dubailand.gov.ae" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="632,3950" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="630,7940" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,3755" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:FileExistsX DisplayName="File Exists" Exists="[out_is_TitleDeedFileDownloaded]" sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Output\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;\&quot;+in_transactionalItem(&quot;Case Number&quot;).tostring+&quot;-&quot;+in_transactionalItem(&quot;Opportunity&quot;).tostring+&quot;_TitleDeed.pdf&quot;]">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:FileExistsX>
-                    <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="596,57" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="DebuggerApi" MovementUnits="10" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
+                    <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="DebuggerApi" MovementUnits="10" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
                       <uix:NMouseScroll.SearchedElement>
                         <uix:SearchedElement>
                           <uix:SearchedElement.InUiElement>
@@ -246,43 +238,61 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NMouseScroll>
-                    <uix:NForEachUiElement DisplayName="For Each UI Element 'TBODY'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='currentCard'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="596,6267" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" InteractionMode="DebuggerApi" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
+                    <uix:NForEachUiElement DisplayName="For Each UI Element 'TBODY'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='currentCard'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="488,2257" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" InteractionMode="DebuggerApi" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
                       <uix:NForEachUiElement.Body>
                         <ActivityAction x:TypeArguments="x:Int32">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,6030" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,2020" sap2010:WorkflowViewState.IdRef="Sequence_3">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign DisplayName="Extracts procedure type from a label" sap:VirtualizedContainerService.HintSize="560,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign DisplayName="Extracts procedure type from a label" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_1">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[procedureType]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
                                 <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(currentCard_Label.ToString, "(?&lt;=Procedure Type\s)(.+?)(?=\s*Procedure Number/Year)").Value.Trim]</InArgument>
                               </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </Assign>
-                            <Assign DisplayName="Extract certificate number from a label" sap:VirtualizedContainerService.HintSize="560,175" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign DisplayName="Extract certificate number from a label" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_2">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[certificateNumber]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
                                 <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(currentCard_Label.ToString, "(?&lt;=Certificate Number/Year\s)(\d+/\d+)").Value.Trim]</InArgument>
                               </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </Assign>
-                            <Assign DisplayName="Extract procedure date from label" sap:VirtualizedContainerService.HintSize="560,175" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign DisplayName="Extract procedure date from label" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_3">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[out_ProcedureDate]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
                                 <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(currentCard_Label.ToString, "(?&lt;=Procedure Date\s)(\d{2}/\d{2}/\d{4})").Value.Trim]</InArgument>
                               </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </Assign>
-                            <Assign DisplayName="Extract procedure number from a label string" sap:VirtualizedContainerService.HintSize="560,175" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign DisplayName="Extract procedure number from a label string" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_4">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[out_ProcedureNumber]</OutArgument>
                               </Assign.To>
@@ -291,20 +301,90 @@
                               </Assign.Value>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="560,175" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_5">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[procedureStatus]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
                                 <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.regex.Match(currentCard_Label.ToString,"(?&lt;=Procedure Status\s*)[^\r\n]+").value.trim]</InArgument>
                               </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </Assign>
-                            <If Condition="[out_is_TitleDeedFileDownloaded]" sap:VirtualizedContainerService.HintSize="560,5095" sap2010:WorkflowViewState.IdRef="If_5">
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="452,1054" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <TryCatch.Try>
+                                <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,422" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="aastate" DisplayName="Get Attribute 'Certificate State'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,196" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[certificateState]" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
+                                    <uix:NGetAttributeGeneric.Target>
+                                      <uix:TargetAnchorable BrowserURL="oqood.dubailand.gov.ae/ConfigurationManagement/Property/ContractSearchList.aspx" ContentHash="AVmU9nEgok60P9LixSHhBQ" DesignTimeRectangle="688, 674, 77, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;ctrl name='{0}' role='link' aastate='focusable, linked, opaque' /&gt;&quot;,certificateNumber)]" Guid="152fdfeb-a924-4f80-9577-9c6947e5dc38" InformativeScreenshot="1739104eb44a1c4878d9b158b49d0a57.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/7uqmtqSw50uRNzaC8Umchw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" SelectionStrategy="AA" Version="V6" WaitForReadyArgument="Interactive" />
+                                    </uix:NGetAttributeGeneric.Target>
+                                  </uix:NGetAttributeGeneric>
+                                  <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Boolean">[is_CertificateAccessable]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </TryCatch.Try>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                  <ActivityAction x:TypeArguments="s:Exception">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="450,401" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Boolean">[is_CertificateAccessable]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Boolean">[false]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Sale - Title Deed Href Not Found Skipping&quot;]" />
+                                    </Sequence>
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                              <TryCatch.Finally>
+                                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </TryCatch.Finally>
+                            </TryCatch>
+                            <If Condition="[procedureType = &quot;Sale&quot; AndAlso&#xA;DateTime.ParseExact(out_ProcedureDate.Trim,&quot;dd/MM/yyyy&quot; ,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces)&gt;=DateTime.ParseExact(in_transactionalItem(&quot;Date/Time Opened&quot;).ToString.Trim,&quot;M/d/yyyy h:mm tt&quot;,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces) AndAlso&#xA;procedureStatus = &quot;COMPLETED&quot; AndAlso&#xA;is_CertificateAccessable]" sap:VirtualizedContainerService.HintSize="452,503" sap2010:WorkflowViewState.IdRef="If_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -312,128 +392,39 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <If.Then>
-                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,671" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,283" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[in_transactionalItem(&quot;Case Number&quot;).tostring+&quot;_TitleDeed.pdf Already Existing&quot;]" />
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Off-plan Procedures'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,194" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="oqood.dubailand.gov.ae/Default.aspx" ContentHash="dhj2buLHU0a5DxKAvn3dGg" DesignTimeRectangle="777, 333, 154, 43" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='dropdown-toggle' tag='A' /&gt;" Guid="d6e78ed0-a46e-41ca-93cf-5e64ddc50c2e" InformativeScreenshot="11bf703f0ce55ed4c25af019913a8b3d.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/H_cf97AJ5EmNncmLgUz7wA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_5' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
-                                    </uix:NClick.Target>
+                                  <ui:FileExistsX DisplayName="File Exists" Exists="[out_is_TitleDeedFileDownloaded]" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="FileExistsX_3" Path="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Output\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;\&quot;+in_transactionalItem(&quot;Case Number&quot;).tostring+&quot;-&quot;+in_transactionalItem(&quot;Opportunity&quot;).tostring+&quot;_TitleDeed.pdf&quot;]">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                  </uix:NClick>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Contract List Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,194" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="oqood.dubailand.gov.ae/Default.aspx" ContentHash="MvNRHhwuzECx0vbv86ib8Q" DesignTimeRectangle="778, 326, 304, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*Contract List Search*' tag='A' /&gt;" Guid="fca4cc6d-014d-47b4-be1e-402181819d6b" InformativeScreenshot="31d39af9fbb3ab19c444c096f0e3bff3.jpg" Reference="2ndl-ObV5kmdLRbmcN62Zg/mXC9dSdpXkawfz3v8huMLA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_5' title='oqood.dubailand.gov.ae/Default.aspx?ynNyldSeuqpBBLTq8QugWD5Cv8Kmet2akP8QIxHQu0s%3d' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                                    </uix:NClick.Target>
+                                  </ui:FileExistsX>
+                                  <If Condition="[out_is_TitleDeedFileDownloaded]" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="If_6">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </uix:NClick>
-                                  <ui:Break sap:VirtualizedContainerService.HintSize="524,48" sap2010:WorkflowViewState.IdRef="Break_2" />
-                                </Sequence>
-                              </If.Then>
-                              <If.Else>
-                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="558,4294" sap2010:WorkflowViewState.IdRef="Sequence_26">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,1054" sap2010:WorkflowViewState.IdRef="TryCatch_2">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <TryCatch.Try>
-                                      <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,422" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="aastate" DisplayName="Get Attribute 'Certificate State'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,196" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[certificateState]" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
-                                          <uix:NGetAttributeGeneric.Target>
-                                            <uix:TargetAnchorable BrowserURL="oqood.dubailand.gov.ae/ConfigurationManagement/Property/ContractSearchList.aspx" ContentHash="AVmU9nEgok60P9LixSHhBQ" DesignTimeRectangle="688, 674, 77, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;ctrl name='{0}' role='link' aastate='focusable, linked, opaque' /&gt;&quot;,certificateNumber)]" Guid="152fdfeb-a924-4f80-9577-9c6947e5dc38" InformativeScreenshot="1739104eb44a1c4878d9b158b49d0a57.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/7uqmtqSw50uRNzaC8Umchw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" SelectionStrategy="AA" Version="V6" WaitForReadyArgument="Interactive" />
-                                          </uix:NGetAttributeGeneric.Target>
-                                        </uix:NGetAttributeGeneric>
-                                        <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_6">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Boolean">[is_CertificateAccessable]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
-                                      </Sequence>
-                                    </TryCatch.Try>
-                                    <TryCatch.Catches>
-                                      <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_3">
-                                        <ActivityAction x:TypeArguments="s:Exception">
-                                          <ActivityAction.Argument>
-                                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                          </ActivityAction.Argument>
-                                          <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="450,401" sap2010:WorkflowViewState.IdRef="Sequence_23">
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_7">
-                                              <Assign.To>
-                                                <OutArgument x:TypeArguments="x:Boolean">[is_CertificateAccessable]</OutArgument>
-                                              </Assign.To>
-                                              <Assign.Value>
-                                                <InArgument x:TypeArguments="x:Boolean">[false]</InArgument>
-                                              </Assign.Value>
-                                            </Assign>
-                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Sale - Title Deed Href Not Found Skipping&quot;]" />
-                                          </Sequence>
-                                        </ActivityAction>
-                                      </Catch>
-                                    </TryCatch.Catches>
-                                    <TryCatch.Finally>
-                                      <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_24">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </Sequence>
-                                    </TryCatch.Finally>
-                                  </TryCatch>
-                                  <If Condition="[procedureType = &quot;Sale&quot; AndAlso&#xA;DateTime.ParseExact(out_ProcedureDate.Trim,&quot;dd/MM/yyyy&quot; ,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces)&gt;=DateTime.ParseExact(in_transactionalItem(&quot;Date/Time Opened&quot;).ToString.Trim,&quot;M/d/yyyy h:mm tt&quot;,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces) AndAlso&#xA;procedureStatus = &quot;COMPLETED&quot; AndAlso&#xA;is_CertificateAccessable]" sap:VirtualizedContainerService.HintSize="524,3180" sap2010:WorkflowViewState.IdRef="If_1">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <If.Then>
-                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="522,2960" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_27">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Sale - Title Deed Href Found&quot;]" />
-                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CertifivateNumber'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Off-plan Procedures'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
                                           <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="oqood.dubailand.gov.ae/ConfigurationManagement/Property/ContractSearchList.aspx" ContentHash="wOITLHQai0SrWDIsMcXU-g" DesignTimeRectangle="716, 270, 62, 13" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='A' aaname='{0}' /&gt;&quot;,certificateNumber)]" Guid="f7053c19-383b-4819-a1da-1edb8fe990dc" InformativeScreenshot="91713f2ac76ecb9315df95d342e2bd87.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/LeOuze8UWUqe_4G54ISmcw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                                            <uix:TargetAnchorable BrowserURL="oqood.dubailand.gov.ae/Default.aspx" ContentHash="dhj2buLHU0a5DxKAvn3dGg" DesignTimeRectangle="777, 333, 154, 43" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='dropdown-toggle' tag='A' /&gt;" Guid="d6e78ed0-a46e-41ca-93cf-5e64ddc50c2e" InformativeScreenshot="11bf703f0ce55ed4c25af019913a8b3d.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/H_cf97AJ5EmNncmLgUz7wA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_5' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                           </uix:NClick.Target>
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -442,7 +433,47 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </uix:NClick>
-                                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome oqood.dubailand.gov. CertificateInstance" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2006" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="d4a485c5-5f1d-49d6-b976-b1e0f9a181cf" Version="V2">
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Contract List Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="oqood.dubailand.gov.ae/Default.aspx" ContentHash="MvNRHhwuzECx0vbv86ib8Q" DesignTimeRectangle="778, 326, 304, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*Contract List Search*' tag='A' /&gt;" Guid="fca4cc6d-014d-47b4-be1e-402181819d6b" InformativeScreenshot="31d39af9fbb3ab19c444c096f0e3bff3.jpg" Reference="2ndl-ObV5kmdLRbmcN62Zg/mXC9dSdpXkawfz3v8huMLA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_5' title='oqood.dubailand.gov.ae/Default.aspx?ynNyldSeuqpBBLTq8QugWD5Cv8Kmet2akP8QIxHQu0s%3d' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                          </uix:NClick.Target>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NClick>
+                                        <ui:Break sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Break_3" />
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,450" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Sale - Title Deed Href Found&quot;]">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:LogMessage>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CertifivateNumber'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="oqood.dubailand.gov.ae/ConfigurationManagement/Property/ContractSearchList.aspx" ContentHash="wOITLHQai0SrWDIsMcXU-g" DesignTimeRectangle="716, 270, 62, 13" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='A' aaname='{0}' /&gt;&quot;,certificateNumber)]" Guid="f7053c19-383b-4819-a1da-1edb8fe990dc" InformativeScreenshot="91713f2ac76ecb9315df95d342e2bd87.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/LeOuze8UWUqe_4G54ISmcw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                                          </uix:NClick.Target>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NClick>
+                                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome oqood.dubailand.gov. CertificateInstance" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="d4a485c5-5f1d-49d6-b976-b1e0f9a181cf" Version="V2">
                                           <uix:NApplicationCard.Body>
                                             <ActivityAction x:TypeArguments="x:Object">
                                               <ActivityAction.Argument>
@@ -538,24 +569,31 @@
                                           </uix:NApplicationCard.TargetApp>
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </uix:NApplicationCard>
-                                        <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" Direction="[UiPath.UIAutomationNext.Enums.NScrollDirection.Up]" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,226" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="DebuggerApi" MovementUnits="10" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5" />
-                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Off-plan Procedures'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,194" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
+                                        <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" Direction="[UiPath.UIAutomationNext.Enums.NScrollDirection.Up]" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="DebuggerApi" MovementUnits="10" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NMouseScroll>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Off-plan Procedures'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
                                           <uix:NClick.Target>
                                             <uix:TargetAnchorable BrowserURL="oqood.dubailand.gov.ae/Default.aspx" ContentHash="dhj2buLHU0a5DxKAvn3dGg" DesignTimeRectangle="777, 333, 154, 43" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='dropdown-toggle' tag='A' /&gt;" Guid="d6e78ed0-a46e-41ca-93cf-5e64ddc50c2e" InformativeScreenshot="11bf703f0ce55ed4c25af019913a8b3d.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/H_cf97AJ5EmNncmLgUz7wA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_5' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                           </uix:NClick.Target>
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </uix:NClick>
-                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Contract List Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Contract List Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
                                           <uix:NClick.Target>
                                             <uix:TargetAnchorable BrowserURL="oqood.dubailand.gov.ae/Default.aspx" ContentHash="MvNRHhwuzECx0vbv86ib8Q" DesignTimeRectangle="778, 326, 304, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*Contract List Search*' tag='A' /&gt;" Guid="fca4cc6d-014d-47b4-be1e-402181819d6b" InformativeScreenshot="31d39af9fbb3ab19c444c096f0e3bff3.jpg" Reference="2ndl-ObV5kmdLRbmcN62Zg/mXC9dSdpXkawfz3v8huMLA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_5' title='oqood.dubailand.gov.ae/Default.aspx?ynNyldSeuqpBBLTq8QugWD5Cv8Kmet2akP8QIxHQu0s%3d' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                           </uix:NClick.Target>
@@ -566,19 +604,19 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </uix:NClick>
-                                        <ui:Break sap:VirtualizedContainerService.HintSize="488,48" sap2010:WorkflowViewState.IdRef="Break_1" />
-                                      </Sequence>
-                                    </If.Then>
-                                    <If.Else>
-                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="522,90" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Break sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Break_1" />
                                       </Sequence>
                                     </If.Else>
                                   </If>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
                                 </Sequence>
                               </If.Else>
                             </If>
@@ -612,7 +650,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NForEachUiElement>
-                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="596,57" sap2010:WorkflowViewState.IdRef="Delay_1">
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="Delay_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -620,7 +658,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Delay>
-                    <ui:FileExistsX DisplayName="File Exists" Exists="[out_is_TitleDeedFileDownloaded]" sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Output\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;\&quot;+in_transactionalItem(&quot;Case Number&quot;).tostring+&quot;-&quot;+in_transactionalItem(&quot;Opportunity&quot;).tostring+&quot;_TitleDeed.pdf&quot;]">
+                    <ui:FileExistsX DisplayName="File Exists" Exists="[out_is_TitleDeedFileDownloaded]" sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Output\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;\&quot;+in_transactionalItem(&quot;Case Number&quot;).tostring+&quot;-&quot;+in_transactionalItem(&quot;Opportunity&quot;).tostring+&quot;_TitleDeed.pdf&quot;]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -628,7 +666,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:FileExistsX>
-                    <If Condition="[out_is_TitleDeedFileDownloaded]" sap:VirtualizedContainerService.HintSize="596,1149" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If Condition="[out_is_TitleDeedFileDownloaded]" sap:VirtualizedContainerService.HintSize="488,1149" sap2010:WorkflowViewState.IdRef="If_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

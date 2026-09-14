@@ -118,7 +118,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1494,2519" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1494,2399" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="is_NameMatched" />
       <Variable x:TypeArguments="x:String" Name="procedureNumber" />
@@ -126,6 +126,7 @@
       <Variable x:TypeArguments="x:Boolean" Name="is_TitleDeedFileDownloaded" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_CaseParties" />
       <Variable x:TypeArguments="x:String" Name="columnIndex" />
+      <Variable x:TypeArguments="x:String" Name="bankName" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -149,13 +150,13 @@
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
     <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="611,89" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <Sequence DisplayName="Main-WorkFlow" sap:VirtualizedContainerService.HintSize="611,1980" sap2010:WorkflowViewState.IdRef="Sequence_15">
+    <Sequence DisplayName="Main-WorkFlow" sap:VirtualizedContainerService.HintSize="611,1860" sap2010:WorkflowViewState.IdRef="Sequence_15">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Automates title deed transfer NOC processing with case checks and error handling." sap:VirtualizedContainerService.HintSize="577,1897" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Automates title deed transfer NOC processing with case checks and error handling." sap:VirtualizedContainerService.HintSize="577,1777" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -163,7 +164,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="575,1453" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="575,1333" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -179,11 +180,12 @@
                       (row("Status").ToString.Trim.Equals("Success", StringComparison.OrdinalIgnoreCase) OrElse
 					  row("Status").ToString.Trim.Equals("Owner Name Not Matched", StringComparison.OrdinalIgnoreCase) OrElse
 					  row("Status").ToString.Trim.Equals("No Search History Found In DLD", StringComparison.OrdinalIgnoreCase) OrElse
-					  row("Status").ToString.Trim.Equals("Sale-Title Deed Not Found", StringComparison.OrdinalIgnoreCase))
+					  row("Status").ToString.Trim.Equals("Sale-Title Deed Not Found", StringComparison.OrdinalIgnoreCase)OrElse
+					  row("Status").ToString.Trim.Equals("Bank Name Or Owner Names Not Matching", StringComparison.OrdinalIgnoreCase))
 					  )]</InArgument>
               </Assign.Value>
             </Assign>
-            <If Condition="[out_is_CaseAlreadyExecuted]" DisplayName="If-Check Case Already Executed?" sap:VirtualizedContainerService.HintSize="541,1218" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[out_is_CaseAlreadyExecuted]" DisplayName="If-Check Case Already Executed?" sap:VirtualizedContainerService.HintSize="541,1098" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -191,29 +193,30 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="508,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="474,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[in_TransactionItem(&quot;Case Number&quot;).tostring+&quot; Already Executed&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[in_TransactionItem(&quot;Case Number&quot;).tostring+&quot; Already Executed&quot;]" />
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="508,862" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,742" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="sf_CaseID - Invoke Workflow File (DeveloperFramework\Salesforce\sf_CaseID.xaml)" sap:VirtualizedContainerService.HintSize="474,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="DeveloperFramework\Salesforce\sf_CaseID.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="sf_CaseID - Invoke Workflow File (DeveloperFramework\Salesforce\sf_CaseID.xaml)" sap:VirtualizedContainerService.HintSize="452,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="DeveloperFramework\Salesforce\sf_CaseID.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
                       <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_Dt_CaseParties">[dt_CaseParties]</OutArgument>
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_BankName">[bankName]</OutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="oqood_ContractListSearch - Invoke Workflow File (DeveloperFramework\Oqood\oqood_ContractListSearch.xaml)" sap:VirtualizedContainerService.HintSize="474,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="DeveloperFramework\Oqood\oqood_ContractListSearch.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="oqood_ContractListSearch - Invoke Workflow File (DeveloperFramework\Oqood\oqood_ContractListSearch.xaml)" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="DeveloperFramework\Oqood\oqood_ContractListSearch.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_CaseParties">[dt_CaseParties]</InArgument>
                       <InArgument x:TypeArguments="x:Int32" x:Key="in_TransactionNumber">[in_TransactionNumber]</InArgument>
@@ -227,12 +230,12 @@
                     </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
-                  <If Condition="[is_NameMatched AndAlso is_TitleDeedFileDownloaded]" DisplayName="Upload attachments for title deed transfer NOC" sap:VirtualizedContainerService.HintSize="474,448" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If Condition="[is_NameMatched AndAlso is_TitleDeedFileDownloaded]" DisplayName="Upload attachments for title deed transfer NOC" sap:VirtualizedContainerService.HintSize="452,448" sap2010:WorkflowViewState.IdRef="If_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -240,14 +243,17 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="472,228" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="sf_AttachmentUpload - Invoke Workflow File (DeveloperFramework\Salesforce\sf_AttachmentUpload.xaml)" sap:VirtualizedContainerService.HintSize="438,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="DeveloperFramework\Salesforce\sf_AttachmentUpload.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="sf_AttachmentUpload - Invoke Workflow File (DeveloperFramework\Salesforce\sf_AttachmentUpload.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="DeveloperFramework\Salesforce\sf_AttachmentUpload.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_CaseParties">[dt_CaseParties]</InArgument>
+                            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Bankname">[bankName]</InArgument>
                             <InArgument x:TypeArguments="x:String" x:Key="in_ProcedureNumber">[procedureNumber]</InArgument>
                             <InArgument x:TypeArguments="x:String" x:Key="in_ProcedureDate">[procedureDate]</InArgument>
                             <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
@@ -265,7 +271,7 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="472,90" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>

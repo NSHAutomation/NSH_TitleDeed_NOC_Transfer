@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-8crM0ZfGU2cCmZC0Mog8g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH00001G0ENwYAN" DesignTimeRectangle="1298, 375, 591, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Closed' /&gt;" Guid="371155d0-a7a5-4cc9-8669-b43826e04d50" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bf817e6cd329a7d69dda30dc30a50a86.jpg" xmlns="">0wUhwmWpJaUeyTCFR5BqDZw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

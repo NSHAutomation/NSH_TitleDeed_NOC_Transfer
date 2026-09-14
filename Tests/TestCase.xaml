@@ -43,6 +43,14 @@
       <x:String>UiPath.Shared.Activities.Utils</x:String>
       <x:String>UiPath.Mail.Outlook.Activities</x:String>
       <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -97,25 +105,51 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestCase" sap:VirtualizedContainerService.HintSize="898,813.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestCase" sap:VirtualizedContainerService.HintSize="1500,813.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="pdfBankName">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">ABU DHABI COMMERCIAL BANK</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="bankName">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">ADCB</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="finalBankName" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:TakeScreenshot Screenshot="{x:Null}" WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="450,110" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1">
-      <ui:TakeScreenshot.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="aa203ed5-50a8-4582-8648-8c0346868c7c">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
-      </ui:TakeScreenshot.Target>
-    </ui:TakeScreenshot>
+    <ui:InvokeVBScript KillOnTimeout="{x:Null}" RunInBatchMode="{x:Null}" TimeoutMS="{x:Null}" UnicodeSupport="{x:Null}" DisplayName="Invoke VBScript" FileName="[If(&#xA;    System.Text.RegularExpressions.Regex.IsMatch(&#xA;        bankName.Trim,&#xA;        &quot;^[A-Za-z]{2,6}$&quot;&#xA;    ),&#xA;    If(&#xA;        System.Text.RegularExpressions.Regex.Replace(&#xA;            pdfBankName.Trim,&#xA;            &quot;\s+&quot;,&#xA;            &quot; &quot;&#xA;        ).Equals(&#xA;            &quot;ABU DHABI COMMERCIAL BANK&quot;,&#xA;            StringComparison.OrdinalIgnoreCase&#xA;        ),&#xA;        bankName.Trim.ToUpper,&#xA;        pdfBankName&#xA;    ),&#xA;    pdfBankName&#xA;)]" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="InvokeVBScript_3" Result="[finalBankName]" WaitForOutput="True">
+      <ui:InvokeVBScript.Arguments>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">[bankName]</InArgument>
+          <InArgument x:TypeArguments="x:String">[pdfBankName]</InArgument>
+        </scg:List>
+      </ui:InvokeVBScript.Arguments>
+    </ui:InvokeVBScript>
   </Sequence>
 </Activity>

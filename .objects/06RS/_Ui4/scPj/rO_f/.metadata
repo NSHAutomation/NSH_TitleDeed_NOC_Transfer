@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "Internal Comments",
+  "Name": "Verification Comments",
   "Type": "Element",
   "TaxonomyType": "Element",
   "Id": "rO_fBUfLskG0zU7a3z1psg",
   "Reference": "2ndl-ObV5kmdLRbmcN62Zg/rO_fBUfLskG0zU7a3z1psg",
   "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
   "Created": "2026-09-07T06:42:49.2753095Z",
-  "Updated": "2026-09-07T17:20:15.6029769Z",
+  "Updated": "2026-09-14T10:44:08.5282105Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
     "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"

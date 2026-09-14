@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "Type Into-Internal Comments",
+  "Name": "Type Into-Verification Comments",
   "Type": "Element",
   "TaxonomyType": "Input",
   "Id": "HblvimUNzk2v-AMaQogozg",
   "Reference": "2ndl-ObV5kmdLRbmcN62Zg/HblvimUNzk2v-AMaQogozg",
   "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
   "Created": "2026-09-07T17:31:45.9468089Z",
-  "Updated": "2026-09-07T17:32:36.5081902Z",
+  "Updated": "2026-09-14T10:44:59.5187583Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
     "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
