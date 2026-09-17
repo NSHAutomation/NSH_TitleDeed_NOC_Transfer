@@ -111,7 +111,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PDF_ReadTitleDeed" sap:VirtualizedContainerService.HintSize="1494,2926" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PDF_ReadTitleDeed" sap:VirtualizedContainerService.HintSize="993,2926" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pdfText" />
       <Variable x:TypeArguments="x:String" Name="titleDeedBankName" />

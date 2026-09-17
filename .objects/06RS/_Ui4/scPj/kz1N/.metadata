@@ -1,0 +1,17 @@
+﻿{
+  "Name": "OK-TakeOwnership",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "kz1Ny8Z88UWLtvIQhHvc-w",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/kz1Ny8Z88UWLtvIQhHvc-w",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
+  "Created": "2026-09-16T18:33:35.1707963Z",
+  "Updated": "2026-09-16T18:34:20.2527094Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

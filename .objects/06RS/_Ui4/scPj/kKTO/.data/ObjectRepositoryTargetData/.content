@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1W4wKiHOsUmojNUsmTusnw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH00001KMlvg/e" DesignTimeRectangle="734, 274, 43, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Cancel' type='submit' /&gt;" Guid="de569bd0-cdf1-4c55-b1c4-e8ebbbfd0398" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="6538c695f2136f296e0a0a95950f5c6c.jpg" xmlns="">0HxBjDqSFakO2i90aWuo1rw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

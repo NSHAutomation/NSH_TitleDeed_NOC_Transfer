@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="TestCase_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="TestCase_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -23,8 +23,6 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Reflection</x:String>
@@ -51,6 +49,11 @@
       <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -122,34 +125,21 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestCase" sap:VirtualizedContainerService.HintSize="1500,813.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestCase" sap:VirtualizedContainerService.HintSize="1500,857.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="pdfBankName">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">ABU DHABI COMMERCIAL BANK</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="bankName">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">ADCB</Literal>
-        </Variable.Default>
-      </Variable>
       <Variable x:TypeArguments="x:String" Name="finalBankName" />
+      <Variable x:TypeArguments="x:String" Name="titleDeedBankName" />
+      <Variable x:TypeArguments="x:String" Name="pdfText" />
+      <Variable x:TypeArguments="str:MatchCollection" Name="getOwnerName" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="getOwnerNameEnglish" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeVBScript KillOnTimeout="{x:Null}" RunInBatchMode="{x:Null}" TimeoutMS="{x:Null}" UnicodeSupport="{x:Null}" DisplayName="Invoke VBScript" FileName="[If(&#xA;    System.Text.RegularExpressions.Regex.IsMatch(&#xA;        bankName.Trim,&#xA;        &quot;^[A-Za-z]{2,6}$&quot;&#xA;    ),&#xA;    If(&#xA;        System.Text.RegularExpressions.Regex.Replace(&#xA;            pdfBankName.Trim,&#xA;            &quot;\s+&quot;,&#xA;            &quot; &quot;&#xA;        ).Equals(&#xA;            &quot;ABU DHABI COMMERCIAL BANK&quot;,&#xA;            StringComparison.OrdinalIgnoreCase&#xA;        ),&#xA;        bankName.Trim.ToUpper,&#xA;        pdfBankName&#xA;    ),&#xA;    pdfBankName&#xA;)]" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="InvokeVBScript_3" Result="[finalBankName]" WaitForOutput="True">
-      <ui:InvokeVBScript.Arguments>
-        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-          <InArgument x:TypeArguments="x:String">[bankName]</InArgument>
-          <InArgument x:TypeArguments="x:String">[pdfBankName]</InArgument>
-        </scg:List>
-      </ui:InvokeVBScript.Arguments>
-    </ui:InvokeVBScript>
   </Sequence>
 </Activity>

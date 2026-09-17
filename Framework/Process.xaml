@@ -39,14 +39,14 @@
       <x:String>System.Xml.Linq</x:String>
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Xml.Serialization</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -118,7 +118,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1494,2399" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1494,2519" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="is_NameMatched" />
       <Variable x:TypeArguments="x:String" Name="procedureNumber" />
@@ -134,8 +134,8 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="611,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <Assign sap:VirtualizedContainerService.HintSize="611,175" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="588,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <Assign sap:VirtualizedContainerService.HintSize="588,175" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[columnIndex]</OutArgument>
       </Assign.To>
@@ -149,14 +149,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="611,89" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <Sequence DisplayName="Main-WorkFlow" sap:VirtualizedContainerService.HintSize="611,1860" sap2010:WorkflowViewState.IdRef="Sequence_15">
+    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="588,89" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
+    <Sequence DisplayName="Main-WorkFlow" sap:VirtualizedContainerService.HintSize="588,1980" sap2010:WorkflowViewState.IdRef="Sequence_15">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Automates title deed transfer NOC processing with case checks and error handling." sap:VirtualizedContainerService.HintSize="577,1777" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Automates title deed transfer NOC processing with case checks and error handling." sap:VirtualizedContainerService.HintSize="554,1897" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -164,13 +164,13 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="575,1333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="552,1453" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Check if case already executed" sap:VirtualizedContainerService.HintSize="541,175" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign DisplayName="Check if case already executed" sap:VirtualizedContainerService.HintSize="518,175" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Boolean">[out_is_CaseAlreadyExecuted]</OutArgument>
               </Assign.To>
@@ -180,12 +180,17 @@
                       (row("Status").ToString.Trim.Equals("Success", StringComparison.OrdinalIgnoreCase) OrElse
 					  row("Status").ToString.Trim.Equals("Owner Name Not Matched", StringComparison.OrdinalIgnoreCase) OrElse
 					  row("Status").ToString.Trim.Equals("No Search History Found In DLD", StringComparison.OrdinalIgnoreCase) OrElse
-					  row("Status").ToString.Trim.Equals("Sale-Title Deed Not Found", StringComparison.OrdinalIgnoreCase)OrElse
-					  row("Status").ToString.Trim.Equals("Bank Name Or Owner Names Not Matching", StringComparison.OrdinalIgnoreCase))
-					  )]</InArgument>
+					  row("Status").ToString.Trim.Equals("Title Deed Not Found", StringComparison.OrdinalIgnoreCase)OrElse
+					  row("Status").ToString.Trim.Equals("Bank Name Or Owner Names Not Matching", StringComparison.OrdinalIgnoreCase) OrElse
+					  row("Status").ToString.Trim.Equals("Case Already Closed", StringComparison.OrdinalIgnoreCase) OrElse
+					 row("Status").ToString.Trim.Equals("PCC Not Generated", StringComparison.OrdinalIgnoreCase) OrElse
+					 row("Status").ToString.Trim.Equals("Sell Pre Registration Name Not Matched", StringComparison.OrdinalIgnoreCase) OrElse
+					 row("Status").ToString.Trim.Equals("New Opportunity Property No Genetated", StringComparison.OrdinalIgnoreCase)
+					 )
+			)]</InArgument>
               </Assign.Value>
             </Assign>
-            <If Condition="[out_is_CaseAlreadyExecuted]" DisplayName="If-Check Case Already Executed?" sap:VirtualizedContainerService.HintSize="541,1098" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[out_is_CaseAlreadyExecuted]" DisplayName="If-Check Case Already Executed?" sap:VirtualizedContainerService.HintSize="518,1218" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -203,7 +208,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,742" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,862" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -216,7 +221,7 @@
                       <OutArgument x:TypeArguments="x:String" x:Key="out_BankName">[bankName]</OutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="oqood_ContractListSearch - Invoke Workflow File (DeveloperFramework\Oqood\oqood_ContractListSearch.xaml)" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="DeveloperFramework\Oqood\oqood_ContractListSearch.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="oqood_ContractListSearch - Invoke Workflow File (DeveloperFramework\Oqood\oqood_ContractListSearch.xaml)" sap:VirtualizedContainerService.HintSize="452,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="DeveloperFramework\Oqood\oqood_ContractListSearch.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_CaseParties">[dt_CaseParties]</InArgument>
                       <InArgument x:TypeArguments="x:Int32" x:Key="in_TransactionNumber">[in_TransactionNumber]</InArgument>
@@ -230,7 +235,7 @@
                     </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -291,13 +296,13 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="575,108" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="552,108" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Rethrow sap:VirtualizedContainerService.HintSize="541,48" sap2010:WorkflowViewState.IdRef="Rethrow_2" />
+                <Rethrow sap:VirtualizedContainerService.HintSize="518,48" sap2010:WorkflowViewState.IdRef="Rethrow_2" />
               </Sequence>
             </ActivityAction>
           </Catch>
@@ -306,19 +311,19 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="575,108" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="552,108" sap2010:WorkflowViewState.IdRef="Sequence_10">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Rethrow sap:VirtualizedContainerService.HintSize="541,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+                <Rethrow sap:VirtualizedContainerService.HintSize="518,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
               </Sequence>
             </ActivityAction>
           </Catch>
         </TryCatch.Catches>
         <TryCatch.Finally>
-          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="575,90" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="552,90" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>

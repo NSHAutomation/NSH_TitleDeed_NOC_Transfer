@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eI6HBhoucU6K-NDGPo1IXQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH00001KMlvgYAD" DesignTimeRectangle="1068, 189, 39, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='nshama.my.salesforce.com says' role='dialog' /&gt;&lt;ctrl role='push button' text='OK' /&gt;" Guid="1636079b-cc78-41dc-ac0f-5b32f58bc878" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f76f4cdf7d24754b285ebbdbbb765314.jpg" xmlns="">01wG5frIDVEmZUclL11_3FQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
