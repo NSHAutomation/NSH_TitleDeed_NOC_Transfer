@@ -152,7 +152,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="sf_BuyerMortageSMT" sap:VirtualizedContainerService.HintSize="1494,11529" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="sf_BuyerMortageSMT" sap:VirtualizedContainerService.HintSize="1277,10655" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="newOpportunityPropertyNumber" />
       <Variable x:TypeArguments="x:String" Name="previousComments" />
@@ -165,33 +165,33 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="666,11506" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="666,10632" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="632,11423" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="632,10549" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="630,10979" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="630,10105" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Salesforce Home" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,10919" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Salesforce Home" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,10045" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,10724" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,9850" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[in_TransactionItem(&quot;Application Reason&quot;).ToString().Trim()=&quot;NOC for Sale - Post Handover (Unpaid - Buyer Mortgage)&quot;]" sap:VirtualizedContainerService.HintSize="560,10664" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If Condition="[in_TransactionItem(&quot;Application Reason&quot;).ToString().Trim()=&quot;NOC for Sale - Post Handover (Unpaid - Buyer Mortgage)&quot;]" sap:VirtualizedContainerService.HintSize="560,9790" sap2010:WorkflowViewState.IdRef="If_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -199,13 +199,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,2786" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,2252" sap2010:WorkflowViewState.IdRef="Sequence_21">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <If Condition="[cint(in_TransactionItem(&quot;PCC Generated&quot;).ToString) = 1]" sap:VirtualizedContainerService.HintSize="524,2726" sap2010:WorkflowViewState.IdRef="If_4">
+                          <If Condition="[cint(in_TransactionItem(&quot;PCC Generated&quot;).ToString) = 1]" sap:VirtualizedContainerService.HintSize="524,2192" sap2010:WorkflowViewState.IdRef="If_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -213,13 +213,13 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,285" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,285" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="PDF_SMT_PTD_BuyerMortgage - Invoke Workflow File (DeveloperFramework\PDFFramework\PDF_SMT_PTD_BuyerMortgage.xaml)" sap:VirtualizedContainerService.HintSize="452,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DeveloperFramework\PDFFramework\PDF_SMT_PTD_BuyerMortgage.xaml">
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="PDF_SMT_PTD_BuyerMortgage - Invoke Workflow File (DeveloperFramework\PDFFramework\PDF_SMT_PTD_BuyerMortgage.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DeveloperFramework\PDFFramework\PDF_SMT_PTD_BuyerMortgage.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
                                     <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
                                     <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_CaseParties">[in_dt_CaseParties]</InArgument>
@@ -228,7 +228,7 @@
                                     <OutArgument x:TypeArguments="x:Boolean" x:Key="out_Is_TitleDeedNamesMatched">[is_TitleDeedNamesMatched]</OutArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
-                                <If Condition="[is_BankNameMatched AndAlso is_TitleDeedNamesMatched]" sap:VirtualizedContainerService.HintSize="452,48" sap2010:WorkflowViewState.IdRef="If_8">
+                                <If Condition="[is_BankNameMatched AndAlso is_TitleDeedNamesMatched]" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="If_8">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -236,14 +236,14 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,5216" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,5111" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT DLD-TransferDate'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="DebuggerApi" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Text="[in_ProcedureDate]" Version="V5">
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT DLD-TransferDate'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Text="[in_ProcedureDate]" Version="V5">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001EuMBv/e" ContentHash="OSdazvrvIUSZc-d37IZipg" DesignTimeRectangle="393, 339, 88, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl type='text' tag='INPUT' aaname='DLD Transfer Date' /&gt;" Guid="2ec50d8f-518e-4839-9e94-732f89a23302" InformativeScreenshot="81ebc8034a2b9708c158397d413fe2c7.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/ONA-HDCmLEqKi5y6uYdkwQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                         </uix:NTypeInto.Target>
@@ -280,7 +280,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NKeyboardShortcuts>
-                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT ProcedureNumber'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="DebuggerApi" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Text="[in_ProcedureNumber]" Version="V5">
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT ProcedureNumber'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="HardwareEvents" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Text="[in_ProcedureNumber]" Version="V5">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001EuMBv/e" ContentHash="Iy8A_TetiEK4r0DCcSj3YQ" DesignTimeRectangle="393, 379, 177, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl type='text' tag='INPUT' aaname='Procedure Number' /&gt;" Guid="bb5b0294-8e0c-4c24-9a92-9dd9fd5c9ab8" InformativeScreenshot="84fbdca657e9632f4a5cfa7c3852cef2.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/WH8j-U6eW0yJzV7kccX3Xw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                         </uix:NTypeInto.Target>
@@ -360,7 +360,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:CommentOut>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001EuMBv/e" ContentHash="koSwsayGPEGRLiSWkDerfA" DesignTimeRectangle="611, 198, 39, 18" ElementType="Button" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Save' type='submit' /&gt;" Guid="c53f446e-9040-4db4-8719-497efcb816b9" InformativeScreenshot="b4172ff51ec45c3cf4bcf5c29d662ca4.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/Uil3k2O3HECDspePQx3mcA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                         </uix:NClick.Target>
@@ -371,7 +371,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NClick>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Take Ownership'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Take Ownership'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH000013tKdVYAU" ContentHash="Kf2DpW8uiUyTLYgTgNM2AQ" DesignTimeRectangle="826, 278, 82, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Take Ownership' type='button' /&gt;" Guid="917cc562-1752-417a-8822-146ea9ff97e7" InformativeScreenshot="6f4a86980bc6af9354ac3cd75d50e1c5.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/FDgvtpn1eUO0oBm7Ex8n-A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                         </uix:NClick.Target>
@@ -391,7 +391,7 @@
                                           </uix:TargetAnchorable>
                                         </uix:NClick.Target>
                                       </uix:NClick>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="15" DisplayName="Click 'Close Case'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="15" DisplayName="Click 'Close Case'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,89" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH000013tKdVYAU" ContentHash="9ddN4w4xr0ilw-bbUgLHtQ" DesignTimeRectangle="1081, 278, 60, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Close Case' type='button' /&gt;" Guid="d4737b73-28d1-48c4-a67b-05bc96d23875" InformativeScreenshot="3dbff8604b825e8f9e328488a34522b5.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/JxkDdUrw4EWPJ8aED4VL4A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                         </uix:NClick.Target>
@@ -566,7 +566,7 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </uix:NTypeInto>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH000013tKdOYAU" ContentHash="RYk6crV_fE-kw5piyMWofg" DesignTimeRectangle="933, 429, 24, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' aaname='OK' /&gt;" Guid="76dc1147-d172-4b5d-9686-76384b7eaf2e" InformativeScreenshot="496ac9400fd650b456dc36c94f02b1ca.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/5l6e-C4CNkWcd3ZYsAjJ9Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                               </uix:NClick.Target>
@@ -577,7 +577,7 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save-ParentCase'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_27" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save-ParentCase'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_27" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH000013tKdOYAU" ContentHash="mNicA6Vf9EaL_UZ3iUso0w" DesignTimeRectangle="609, 410, 39, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Save' type='button' /&gt;" Guid="62d8155e-f0b4-441e-8254-2d1121897285" InformativeScreenshot="cf5ec7aa1d68847e659563b7cfd3d996.jpg" Reference="2ndl-ObV5kmdLRbmcN62Zg/TAmozvxkN0itHgbBmXtwYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                               </uix:NClick.Target>
@@ -743,7 +743,7 @@
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001HcL2sYAF" ContentHash="7UOZC2qXwUOOxbEgjuY1Jg" DesignTimeRectangle="121, 686, 18, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aaname='Del' tableRow='{0}' tag='A' /&gt;&quot;,rowIndex)]" Guid="13c42291-a19b-4973-a861-667ceb5e6160" InformativeScreenshot="d3826232551eaf12a0913a4be555282a.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/WU2OoeFt5U2PtkstHE_prA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                         </uix:NClick.Target>
                                       </uix:NClick>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_29" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001GOpo8YAD" ContentHash="JzHRtOiYI028sbOrUXtK5A" DesignTimeRectangle="1137, 189, 39, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='nshama.my.salesforce.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="a689e91e-2aea-4bfe-aeaf-ed69348d3051" InformativeScreenshot="2c58102c98c0fb5ac7637084b4bc36b2.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/mwTALDghmEq_6L_2_FGM-A" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                         </uix:NClick.Target>
@@ -756,15 +756,15 @@
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,2311" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,1777" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[in_TransactionItem(&quot;Case Number&quot;).ToString + &quot; PCC Not Generated Skipping&quot;]" />
-                                <ui:WriteCell Cell="[in_columnIndex+(in_TransactionNumber+1).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="452,279" sap2010:WorkflowViewState.IdRef="WriteCell_3" SheetName="Sheet1" Text="PCC Not Generated" WorkbookPath="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Input\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\Report_&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;.xlsx&quot;]" />
-                                <uix:NSelectItem DisplayName="Select Item '--IsCaseTransfered--'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="--None--" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[in_TransactionItem(&quot;Case Number&quot;).ToString + &quot; PCC Not Generated Skipping&quot;]" />
+                                <ui:WriteCell Cell="[in_columnIndex+(in_TransactionNumber+1).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="416,279" sap2010:WorkflowViewState.IdRef="WriteCell_3" SheetName="Sheet1" Text="PCC Not Generated" WorkbookPath="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Input\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\Report_&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;.xlsx&quot;]" />
+                                <uix:NSelectItem DisplayName="Select Item '--IsCaseTransfered--'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="--None--" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                   <uix:NSelectItem.Items>
                                     <scg:List x:TypeArguments="x:String" Capacity="3">
                                       <x:String>--None--</x:String>
@@ -782,12 +782,12 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NSelectItem>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Cancel'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Cancel'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001KMlvg/e" ContentHash="1W4wKiHOsUmojNUsmTusnw" DesignTimeRectangle="734, 274, 43, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Cancel' type='submit' /&gt;" Guid="de569bd0-cdf1-4c55-b1c4-e8ebbbfd0398" InformativeScreenshot="6538c695f2136f296e0a0a95950f5c6c.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/kKTOqPvLhU6JIHu4mpLntQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                   </uix:NClick.Target>
                                 </uix:NClick>
-                                <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" Direction="Down" DisplayName="Mouse Scroll-Attachments" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,315" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="DebuggerApi" MovementUnits="20" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" Direction="Down" DisplayName="Mouse Scroll-Attachments" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,315" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="DebuggerApi" MovementUnits="20" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                   <uix:NMouseScroll.SearchedElement>
                                     <uix:SearchedElement>
                                       <uix:SearchedElement.InUiElement>
@@ -805,10 +805,10 @@
                                     </uix:SearchedElement>
                                   </uix:NMouseScroll.SearchedElement>
                                 </uix:NMouseScroll>
-                                <If Condition="[in_dt_AttachmentDetails.RowCount&lt;=1]" sap:VirtualizedContainerService.HintSize="452,591" sap2010:WorkflowViewState.IdRef="If_5">
+                                <If Condition="[in_dt_AttachmentDetails.RowCount&lt;=1]" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="If_5">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
@@ -847,30 +847,30 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Del'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Del'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001HcL2sYAF" ContentHash="7UOZC2qXwUOOxbEgjuY1Jg" DesignTimeRectangle="121, 686, 18, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aaname='Del' tableRow='{0}' tag='A' /&gt;&quot;,rowIndex)]" Guid="13c42291-a19b-4973-a861-667ceb5e6160" InformativeScreenshot="d3826232551eaf12a0913a4be555282a.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/WU2OoeFt5U2PtkstHE_prA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                   </uix:NClick.Target>
                                 </uix:NClick>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK-Delete Attachment'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK-Delete Attachment'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001KMlvgYAD" ContentHash="eI6HBhoucU6K-NDGPo1IXQ" DesignTimeRectangle="1068, 189, 39, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='nshama.my.salesforce.com says' role='dialog' /&gt;&lt;ctrl role='push button' text='OK' /&gt;" Guid="1636079b-cc78-41dc-ac0f-5b32f58bc878" InformativeScreenshot="f76f4cdf7d24754b285ebbdbbb765314.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/8BZGzNK6Ok-KnOyd06PQhg" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                   </uix:NClick.Target>
                                 </uix:NClick>
-                                <Throw Exception="[new BusinessRuleException(&quot;PCC Not Generated&quot;)]" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Throw_3" />
+                                <Throw Exception="[new BusinessRuleException(&quot;PCC Not Generated&quot;)]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_3" />
                               </Sequence>
                             </If.Else>
                           </If>
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="558,7748" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="558,7408" sap2010:WorkflowViewState.IdRef="Sequence_22">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <If Condition="[in_TransactionItem(&quot;Subject&quot;).ToString.Trim.Contains(&quot;NOC for Sell - Pre Handover&quot;)]" sap:VirtualizedContainerService.HintSize="524,7688" sap2010:WorkflowViewState.IdRef="If_6">
+                          <If Condition="[in_TransactionItem(&quot;Subject&quot;).ToString.Trim.Contains(&quot;NOC for Sell - Pre Handover&quot;)]" sap:VirtualizedContainerService.HintSize="524,7348" sap2010:WorkflowViewState.IdRef="If_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -899,7 +899,7 @@
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="522,7330" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="522,6990" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -914,7 +914,7 @@
                                     <OutArgument x:TypeArguments="x:Boolean" x:Key="out_is_BankNameMatched">[is_BankNameMatched]</OutArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
-                                <If Condition="[is_BankNameMatched AndAlso is_TitleDeedNamesMatched]" sap:VirtualizedContainerService.HintSize="488,7093" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If Condition="[is_BankNameMatched AndAlso is_TitleDeedNamesMatched]" sap:VirtualizedContainerService.HintSize="488,6753" sap2010:WorkflowViewState.IdRef="If_1">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -929,7 +929,7 @@
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT DLD-TransferDate'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Text="[in_ProcedureDate]" Version="V5">
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT DLD-TransferDate'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Text="[in_ProcedureDate]" Version="V5">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001EuMBv/e" ContentHash="OSdazvrvIUSZc-d37IZipg" DesignTimeRectangle="393, 339, 88, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl type='text' tag='INPUT' aaname='DLD Transfer Date' /&gt;" Guid="2ec50d8f-518e-4839-9e94-732f89a23302" InformativeScreenshot="81ebc8034a2b9708c158397d413fe2c7.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/ONA-HDCmLEqKi5y6uYdkwQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                         </uix:NTypeInto.Target>
@@ -966,7 +966,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NKeyboardShortcuts>
-                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT ProcedureNumber'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Text="[in_ProcedureNumber]" Version="V5">
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT ProcedureNumber'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Text="[in_ProcedureNumber]" Version="V5">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001EuMBv/e" ContentHash="Iy8A_TetiEK4r0DCcSj3YQ" DesignTimeRectangle="393, 379, 177, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl type='text' tag='INPUT' aaname='Procedure Number' /&gt;" Guid="bb5b0294-8e0c-4c24-9a92-9dd9fd5c9ab8" InformativeScreenshot="84fbdca657e9632f4a5cfa7c3852cef2.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/WH8j-U6eW0yJzV7kccX3Xw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                         </uix:NTypeInto.Target>
@@ -1046,7 +1046,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:CommentOut>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001EuMBv/e" ContentHash="koSwsayGPEGRLiSWkDerfA" DesignTimeRectangle="611, 198, 39, 18" ElementType="Button" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Save' type='submit' /&gt;" Guid="c53f446e-9040-4db4-8719-497efcb816b9" InformativeScreenshot="b4172ff51ec45c3cf4bcf5c29d662ca4.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/Uil3k2O3HECDspePQx3mcA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                         </uix:NClick.Target>
@@ -1057,7 +1057,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NClick>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Take Ownership'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Take Ownership'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH000013tKdVYAU" ContentHash="Kf2DpW8uiUyTLYgTgNM2AQ" DesignTimeRectangle="826, 278, 82, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Take Ownership' type='button' /&gt;" Guid="917cc562-1752-417a-8822-146ea9ff97e7" InformativeScreenshot="6f4a86980bc6af9354ac3cd75d50e1c5.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/FDgvtpn1eUO0oBm7Ex8n-A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                         </uix:NClick.Target>
@@ -1077,7 +1077,7 @@
                                           </uix:TargetAnchorable>
                                         </uix:NClick.Target>
                                       </uix:NClick>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="15" DisplayName="Click 'Close Case'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="15" DisplayName="Click 'Close Case'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH000013tKdVYAU" ContentHash="9ddN4w4xr0ilw-bbUgLHtQ" DesignTimeRectangle="1081, 278, 60, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Close Case' type='button' /&gt;" Guid="d4737b73-28d1-48c4-a67b-05bc96d23875" InformativeScreenshot="3dbff8604b825e8f9e328488a34522b5.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/JxkDdUrw4EWPJ8aED4VL4A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                         </uix:NClick.Target>
@@ -1129,7 +1129,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NMouseScroll>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'ParentCase'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'ParentCase'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001HTGvFYAX" ContentHash="e9wR8TXLgUq71wxVIsbmdw" DesignTimeRectangle="1308, 560, 53, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='3' tag='A' aaname='*' /&gt;" Guid="0b04edc0-ce50-466c-a097-af1500a08ac5" InformativeScreenshot="c9b1d5b90a01ba03905539c491c0b820.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/Ciq0JlnrGkmX7UJ1ERt13w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                         </uix:NClick.Target>
@@ -1252,7 +1252,7 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </uix:NTypeInto>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH000013tKdOYAU" ContentHash="RYk6crV_fE-kw5piyMWofg" DesignTimeRectangle="933, 429, 24, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' aaname='OK' /&gt;" Guid="76dc1147-d172-4b5d-9686-76384b7eaf2e" InformativeScreenshot="496ac9400fd650b456dc36c94f02b1ca.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/5l6e-C4CNkWcd3ZYsAjJ9Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                                               </uix:NClick.Target>
@@ -1263,7 +1263,7 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save-ParentCase'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save-ParentCase'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH000013tKdOYAU" ContentHash="mNicA6Vf9EaL_UZ3iUso0w" DesignTimeRectangle="609, 410, 39, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Save' type='button' /&gt;" Guid="62d8155e-f0b4-441e-8254-2d1121897285" InformativeScreenshot="cf5ec7aa1d68847e659563b7cfd3d996.jpg" Reference="2ndl-ObV5kmdLRbmcN62Zg/TAmozvxkN0itHgbBmXtwYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                               </uix:NClick.Target>
@@ -1358,12 +1358,17 @@
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,1747" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,1407" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancel'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001KMlvg/e" ContentHash="1W4wKiHOsUmojNUsmTusnw" DesignTimeRectangle="734, 274, 43, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Cancel' type='submit' /&gt;" Guid="de569bd0-cdf1-4c55-b1c4-e8ebbbfd0398" InformativeScreenshot="6538c695f2136f296e0a0a95950f5c6c.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/kKTOqPvLhU6JIHu4mpLntQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
                                       <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll-Attachments" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,315" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="DebuggerApi" MovementUnits="20" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                         <uix:NMouseScroll.SearchedElement>
                                           <uix:SearchedElement>
@@ -1382,10 +1387,10 @@
                                           </uix:SearchedElement>
                                         </uix:NMouseScroll.SearchedElement>
                                       </uix:NMouseScroll>
-                                      <If Condition="[in_dt_AttachmentDetails.RowCount&lt;=1]" sap:VirtualizedContainerService.HintSize="452,591" sap2010:WorkflowViewState.IdRef="If_2">
+                                      <If Condition="[in_dt_AttachmentDetails.RowCount&lt;=1]" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="If_2">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
@@ -1424,7 +1429,7 @@
                                           </Sequence>
                                         </If.Else>
                                       </If>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Del'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Del'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a42de404-f8be-4410-b569-e32ebb9fb2c9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="nshama.my.salesforce.com/500VH00001HcL2sYAF" ContentHash="7UOZC2qXwUOOxbEgjuY1Jg" DesignTimeRectangle="121, 686, 18, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aaname='Del' tableRow='{0}' tag='A' /&gt;&quot;,rowIndex)]" Guid="13c42291-a19b-4973-a861-667ceb5e6160" InformativeScreenshot="d3826232551eaf12a0913a4be555282a.jpg" IsResponsive="True" Reference="2ndl-ObV5kmdLRbmcN62Zg/WU2OoeFt5U2PtkstHE_prA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                         </uix:NClick.Target>

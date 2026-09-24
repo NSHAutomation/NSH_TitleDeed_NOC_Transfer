@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="kt8nlDQsU0i5dm6Uu8pTxQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="9z2_Pe7_nkS67Ob-R3Xe4w" Reference="2ndl-ObV5kmdLRbmcN62Zg/0AGCzo-O50-mPdxreg2eLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/00OVH00000CtIa5" DesignTimeRectangle="136, 425, 791, 17" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='File name:*' cls='ComboBox' /&gt;&lt;wnd ctrlid='*' /&gt;" Guid="660b6849-0f1e-463a-9129-887415b736d1" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='*' title='Save As' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="93d1ce66c5bf68543235010c58b85d97.jpg" xmlns="">0fQMNF5PiXkqotKkIX5aHSg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/00OVH00000CtIa5" DesignTimeRectangle="136, 425, 791, 17" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='File name:*' cls='ComboBox' /&gt;&lt;wnd ctrlid='*' /&gt;" Guid="660b6849-0f1e-463a-9129-887415b736d1" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='*' title='Save As' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="93d1ce66c5bf68543235010c58b85d97.jpg" xmlns="">0LxmRLuXG7UGxDJUba81FEw</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">TypeInto</x:String>
   </ObjectRepositoryTargetData.Data>
