@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="XPgsXJEL5kWNGkFp74_mxg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="RYk6crV_fE-kw5piyMWofg" Reference="2ndl-ObV5kmdLRbmcN62Zg/5l6e-C4CNkWcd3ZYsAjJ9Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH000013tKdOYAU" DesignTimeRectangle="933, 468, 24, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' aaname='OK' /&gt;" Guid="76dc1147-d172-4b5d-9686-76384b7eaf2e" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
-      <imageRef attrName="InformativeScreenshot" originalValue="5ccb84fb798d25dbd000effe399ccc7a.jpg" xmlns="">0OEO1UYjFKUWnm32FPfadSQ</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH000013tKdOYAU" DesignTimeRectangle="933, 429, 24, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' aaname='OK' /&gt;" Guid="76dc1147-d172-4b5d-9686-76384b7eaf2e" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="496ac9400fd650b456dc36c94f02b1ca.jpg" xmlns="">0Uf18HlBIHkCy1GiKFGH17Q</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

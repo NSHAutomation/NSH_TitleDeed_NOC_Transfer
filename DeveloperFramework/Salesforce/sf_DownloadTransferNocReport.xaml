@@ -192,7 +192,7 @@
                       <OutArgument x:TypeArguments="x:String">[previousReportFileTT]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(reportFileInfo.LastModifiedDate, "MM/dd/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).ToString("tt")]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(reportFileInfo.CreatedDate, "MM/dd/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).ToString("tt")]</InArgument>
                     </Assign.Value>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">

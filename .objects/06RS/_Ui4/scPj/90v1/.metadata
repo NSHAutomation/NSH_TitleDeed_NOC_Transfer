@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Mouse Scroll-BankName",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "90v1gAUF6UWT14x3jw9ixg",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/90v1gAUF6UWT14x3jw9ixg",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
+  "Created": "2026-09-12T17:36:37.4442007Z",
+  "Updated": "2026-09-12T17:37:39.8613799Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
