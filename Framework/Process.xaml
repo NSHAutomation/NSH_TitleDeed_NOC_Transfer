@@ -118,7 +118,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1530,2937" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1913,2937" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="is_NameMatched" />
       <Variable x:TypeArguments="x:String" Name="procedureNumber" />
@@ -268,7 +268,7 @@
                                   <InArgument x:TypeArguments="x:String" x:Key="in_BankName">[bankName]</InArgument>
                                   <InArgument x:TypeArguments="x:Int32" x:Key="in_TransactionNumber">[in_TransactionNumber]</InArgument>
                                   <InArgument x:TypeArguments="x:String" x:Key="in_columnIndex">[columnIndex]</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="out_is_CaseClosed">[out_is_CaseClosed]</InArgument>
+                                  <OutArgument x:TypeArguments="x:String" x:Key="out_is_CaseClosed">[out_is_CaseClosed]</OutArgument>
                                   <InArgument x:TypeArguments="x:String" x:Key="in_ProcedureDate">[procedureDate]</InArgument>
                                 </ui:InvokeWorkflowFile.Arguments>
                               </ui:InvokeWorkflowFile>
