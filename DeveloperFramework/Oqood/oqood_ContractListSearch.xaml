@@ -115,19 +115,19 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="oqood_ContractListSearch" sap:VirtualizedContainerService.HintSize="1494,2903" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="oqood_ContractListSearch" sap:VirtualizedContainerService.HintSize="1530,2903" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="oqood-ContactListSearch" sap:VirtualizedContainerService.HintSize="558,2880" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="oqood-ContactListSearch" sap:VirtualizedContainerService.HintSize="650,2880" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch-oqood-ContactListSearch" sap:VirtualizedContainerService.HintSize="524,2797" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch-oqood-ContactListSearch" sap:VirtualizedContainerService.HintSize="616,2797" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
           <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="522,2230" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <sap:WorkflowViewStateService.ViewState>
@@ -147,7 +147,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[in_TransactionItem(&quot;Subject&quot;).ToString().contains(&quot;Post&quot;)]" DisplayName="Select property type based on opportunity" sap:VirtualizedContainerService.HintSize="452,979" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If Condition="[in_TransactionItem(&quot;Subject&quot;).ToString().contains(&quot;Post&quot;) OrElse in_TransactionItem(&quot;Subject&quot;).ToString().contains(&quot;NOC for Mortgage&quot;)]" DisplayName="Select property type based on opportunity" sap:VirtualizedContainerService.HintSize="452,979" sap2010:WorkflowViewState.IdRef="If_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

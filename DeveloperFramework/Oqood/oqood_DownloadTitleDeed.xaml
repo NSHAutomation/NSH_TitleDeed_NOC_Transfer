@@ -131,7 +131,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="oqood_DownloadTitleDeed" sap:VirtualizedContainerService.HintSize="1913,5204" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="oqood_DownloadTitleDeed" sap:VirtualizedContainerService.HintSize="1913,7228" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="procedureType" />
       <Variable x:TypeArguments="x:String" Name="certificateNumber" />
@@ -146,21 +146,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="785,5181" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence sap:VirtualizedContainerService.HintSize="785,7205" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="751,5098" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="751,7122" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="749,4418" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="749,6442" sap2010:WorkflowViewState.IdRef="Sequence_16">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -231,13 +231,13 @@
                 </Sequence>
               </ui:IfElseIfV2.Then>
             </ui:IfElseIfV2>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome oqood.dubailand.gov.ae" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="715,4069" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome oqood.dubailand.gov.ae" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="715,6093" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="713,3874" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="713,5898" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -267,13 +267,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NMouseScroll>
-                    <uix:NForEachUiElement DisplayName="For Each UI Element 'TBODY'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='currentCard'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="679,2310" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" InteractionMode="DebuggerApi" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
+                    <uix:NForEachUiElement DisplayName="For Each UI Element 'TBODY'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='currentCard'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="679,4334" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" InteractionMode="DebuggerApi" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="ec2c03e4-5726-4587-998f-a062a5246bf4" Version="V5">
                       <uix:NForEachUiElement.Body>
                         <ActivityAction x:TypeArguments="x:Int32">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="677,2073" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="677,4097" sap2010:WorkflowViewState.IdRef="Sequence_3">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -413,7 +413,7 @@
                                 </Sequence>
                               </TryCatch.Finally>
                             </TryCatch>
-                            <ui:IfElseIfV2 Condition="[in_transactionalItem(&quot;Application Reason&quot;).ToString.Trim().Contains(&quot;NOC for Sale - Post Handover (Unpaid - Buyer Mortgage)&quot;)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="643,1553" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
+                            <ui:IfElseIfV2 Condition="[in_transactionalItem(&quot;Application Reason&quot;).ToString.Trim().Contains(&quot;NOC for Sale - Post Handover (Unpaid - Buyer Mortgage)&quot;) OrElse &#xA;in_transactionalItem(&quot;Subject&quot;).ToString.Trim.Contains(&quot;NOC for Mortgage&quot;)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="643,3577" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
                               <ui:IfElseIfV2.Else>
                                 <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="641,1120" sap2010:WorkflowViewState.IdRef="Sequence_44">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -421,7 +421,7 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <If Condition="[(procedureType = &quot;Sale&quot; OrElse procedureType = &quot;Grant&quot;) AndAlso&#xD;&#xA;DateTime.ParseExact(out_ProcedureDate.Trim,&quot;dd/MM/yyyy&quot; ,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces)&gt;=DateTime.ParseExact(in_transactionalItem(&quot;Date/Time Opened&quot;).ToString.Trim,&quot;M/d/yyyy h:mm tt&quot;,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces) AndAlso&#xD;&#xA;procedureStatus = &quot;COMPLETED&quot; AndAlso&#xD;&#xA;is_CertificateAccessable]" sap:VirtualizedContainerService.HintSize="607,1060" sap2010:WorkflowViewState.IdRef="If_1">
+                                  <If Condition="[(procedureType = &quot;Sale&quot; OrElse procedureType = &quot;Grant&quot;) AndAlso&#xA;DateTime.ParseExact(out_ProcedureDate.Trim,&quot;dd/MM/yyyy&quot; ,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces)&gt;=DateTime.ParseExact(in_transactionalItem(&quot;Date/Time Opened&quot;).ToString.Trim,&quot;M/d/yyyy h:mm tt&quot;,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces) AndAlso&#xA;procedureStatus = &quot;COMPLETED&quot; AndAlso&#xA;is_CertificateAccessable]" sap:VirtualizedContainerService.HintSize="607,1060" sap2010:WorkflowViewState.IdRef="If_1">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -663,16 +663,16 @@
                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                   <ui:IfElseIfBlock BlockType="ElseIf" Condition="[in_transactionalItem(&quot;Subject&quot;).ToString.Trim.Contains(&quot;NOC for Sell - Pre Handover&quot;)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
                                     <ui:IfElseIfBlock.Then>
-                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="641,108" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="641,1120" sap2010:WorkflowViewState.IdRef="Sequence_45">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <If Condition="[procedureType = &quot;Sell - Pre registration&quot; AndAlso&#xA;DateTime.ParseExact(out_ProcedureDate.Trim,&quot;dd/MM/yyyy&quot; ,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces)&gt;=DateTime.ParseExact(in_transactionalItem(&quot;Date/Time Opened&quot;).ToString.Trim,&quot;M/d/yyyy h:mm tt&quot;,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces) AndAlso&#xA;procedureStatus = &quot;COMPLETED&quot; AndAlso&#xA;is_CertificateAccessable]" sap:VirtualizedContainerService.HintSize="607,48" sap2010:WorkflowViewState.IdRef="If_9">
+                                        <If Condition="[procedureType = &quot;Sell - Pre registration&quot; AndAlso&#xA;DateTime.ParseExact(out_ProcedureDate.Trim,&quot;dd/MM/yyyy&quot; ,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces)&gt;=DateTime.ParseExact(in_transactionalItem(&quot;Date/Time Opened&quot;).ToString.Trim,&quot;M/d/yyyy h:mm tt&quot;,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces) AndAlso&#xA;procedureStatus = &quot;COMPLETED&quot; AndAlso&#xA;is_CertificateAccessable]" sap:VirtualizedContainerService.HintSize="607,1060" sap2010:WorkflowViewState.IdRef="If_9">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
@@ -911,16 +911,16 @@
                                 </sc:BindingList>
                               </ui:IfElseIfV2.ElseIfs>
                               <ui:IfElseIfV2.Then>
-                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="641,108" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="641,1120" sap2010:WorkflowViewState.IdRef="Sequence_43">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <If Condition="[procedureType = &quot;Delayed Mortgage&quot; AndAlso&#xA;DateTime.ParseExact(out_ProcedureDate.Trim,&quot;dd/MM/yyyy&quot; ,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces)&gt;=DateTime.ParseExact(in_transactionalItem(&quot;Date/Time Opened&quot;).ToString.Trim,&quot;M/d/yyyy h:mm tt&quot;,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces) AndAlso&#xA;procedureStatus = &quot;COMPLETED&quot; AndAlso&#xA;is_CertificateAccessable]" sap:VirtualizedContainerService.HintSize="607,48" sap2010:WorkflowViewState.IdRef="If_8">
+                                  <If Condition="[procedureType = &quot;Delayed Mortgage&quot; AndAlso&#xA;DateTime.ParseExact(out_ProcedureDate.Trim,&quot;dd/MM/yyyy&quot; ,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces)&gt;=DateTime.ParseExact(in_transactionalItem(&quot;Date/Time Opened&quot;).ToString.Trim,&quot;M/d/yyyy h:mm tt&quot;,System.Globalization.CultureInfo.InvariantCulture,System.Globalization.DateTimeStyles.AllowWhiteSpaces) AndAlso&#xA;procedureStatus = &quot;COMPLETED&quot; AndAlso&#xA;is_CertificateAccessable]" sap:VirtualizedContainerService.HintSize="607,1060" sap2010:WorkflowViewState.IdRef="If_8">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
@@ -1303,7 +1303,7 @@
           </Catch>
         </TryCatch.Catches>
         <TryCatch.Finally>
-          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="630,90" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="749,90" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>

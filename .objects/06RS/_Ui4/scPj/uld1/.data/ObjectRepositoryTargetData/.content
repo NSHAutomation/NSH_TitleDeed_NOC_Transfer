@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yl28voRkFk2qrM_H3BT-GA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH00001MrUxGYAV" DesignTimeRectangle="1308, 481, 103, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tag='A' aaname='*' check:text='*' /&gt;" Guid="831534ab-3762-45a5-9e46-6c522ccf8be4" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="965, 478, 333, 21" ElementType="Text" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl class='labelCol' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Organization Name' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Organization Name' /&gt;" Guid="3a22e7fe-a9cd-4eef-8636-6c212d764e9e" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4476c6dab7c9cccb8932bb77da0ee0fd.jpg" xmlns="">08uo_qOAark-lEC2XQPzpLA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
