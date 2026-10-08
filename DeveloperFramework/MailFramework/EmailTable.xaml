@@ -148,7 +148,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="EmailTable" sap:VirtualizedContainerService.HintSize="1494,4627" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="EmailTable" sap:VirtualizedContainerService.HintSize="1530,4627" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="htmlTable" />
       <Variable x:TypeArguments="x:String" Name="spaceChrtr" />
@@ -162,14 +162,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="558,4604" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence sap:VirtualizedContainerService.HintSize="650,4604" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,4521" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="616,4521" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
           <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="522,4073" sap2010:WorkflowViewState.IdRef="Sequence_15">
             <sap:WorkflowViewStateService.ViewState>
@@ -465,7 +465,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:SendOutlookMail Account="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" UseRichTextEditor="{x:Null}" Bcc="Automation@nshama.ae" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Greetings,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&#xD;&#xA;FYI&lt;/SPAN&gt;&lt;SPAN&gt;, &lt;/SPAN&gt;&lt;SPAN&gt;There are no cases available for closer&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&#xD;&#xA;Please find the attached sheet for your reference&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&#xD;&#xA;Thank you&#xD;&#xA;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" Cc="hitesh@nshama.ae;suraj@nshama.ae" ConnectionMode="LegacyConfiguration" DisplayName="Send Outlook Desktop Mail Message" sap:VirtualizedContainerService.HintSize="416,327" sap2010:WorkflowViewState.IdRef="SendOutlookMail_2" Importance="High" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="Title Deed - NOC Transfer Verification-SMT | No Cases Available For Closer" TimeoutMS="120000" To="Sanjana@nshama.ae;Elina@nshama.ae" UseISConnection="False">
+                        <ui:SendOutlookMail Account="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" UseRichTextEditor="{x:Null}" Bcc="Automation@nshama.ae" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Greetings,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&#xA;FYI&lt;/SPAN&gt;&lt;SPAN&gt;, &lt;/SPAN&gt;&lt;SPAN&gt;There are no cases available for &lt;/SPAN&gt;&lt;SPAN&gt;Closure&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&#xA;Please find the attached sheet for your reference&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&#xA;Thank you&#xA;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" Cc="hitesh@nshama.ae;suraj@nshama.ae" ConnectionMode="LegacyConfiguration" DisplayName="Send Outlook Desktop Mail Message" sap:VirtualizedContainerService.HintSize="416,327" sap2010:WorkflowViewState.IdRef="SendOutlookMail_2" Importance="High" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="Title Deed - NOC Transfer Verification-SMT | No Cases Available For Closer" TimeoutMS="120000" To="Sanjana@nshama.ae;Elina@nshama.ae" UseISConnection="False">
                           <ui:SendOutlookMail.ConnectionDetailsBackupSlot>
                             <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="{x:Null}">
                               <usau:BackupSlot.BackupValues>
