@@ -49,6 +49,7 @@
       <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>UiPath.PDF.Activities</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -107,9 +108,11 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PDF_SMT_PTD_BuyerMortgage" sap:VirtualizedContainerService.HintSize="1494,4123" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PDF_SMT_PTD_BuyerMortgage" sap:VirtualizedContainerService.HintSize="1597,4123" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="str:MatchCollection" Name="getOwnerName" />
       <Variable x:TypeArguments="x:String" Name="titleDeedBankName" />
@@ -123,14 +126,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="558,4100" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence sap:VirtualizedContainerService.HintSize="650,4100" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BuildDataTable DataTable="[dt_TitleDeedOwnerNames]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="524,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Owner_x0020_Names&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,3925" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <ui:BuildDataTable DataTable="[dt_TitleDeedOwnerNames]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="616,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Owner_x0020_Names&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="616,3925" sap2010:WorkflowViewState.IdRef="TryCatch_2">
         <TryCatch.Try>
           <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="522,3420" sap2010:WorkflowViewState.IdRef="Sequence_14">
             <sap:WorkflowViewStateService.ViewState>
@@ -139,7 +142,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Extracting Title Deed Data&quot;]" />
-            <ui:ReadPDFText PreserveFormatting="{x:Null}" ResourceFile="{x:Null}" DisplayName="Read PDF Text" FileName="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Output\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;\&quot;+in_TransactionItem(&quot;Case Number&quot;).tostring+&quot;-&quot;+in_TransactionItem(&quot;Opportunity&quot;).tostring+&quot;_TitleDeed.pdf&quot;]" sap:VirtualizedContainerService.HintSize="488,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_2" Range="All" Text="[pdfText]">
+            <ui:ReadPDFText PreserveFormatting="{x:Null}" ResourceFile="{x:Null}" DisplayName="Read PDF Text" FileName="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Output\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;\&quot;+in_TransactionItem(&quot;Case Number&quot;).tostring+&quot;-&quot;+in_TransactionItem(&quot;Opportunity&quot;).tostring+&quot;_TitleDeed.pdf&quot;]" sap:VirtualizedContainerService.HintSize="488,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_3" Range="All" Text="[pdfText]">
               <ui:ReadPDFText.Item>
                 <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Output\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;\&quot;+in_TransactionItem(&quot;Case Number&quot;).tostring+&quot;-&quot;+in_TransactionItem(&quot;Opportunity&quot;).tostring+&quot;_TitleDeed.pdf&quot;]" />
               </ui:ReadPDFText.Item>
@@ -256,7 +259,7 @@ Select(Function(m) System.Text.RegularExpressions.Regex.Replace(
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{getOwnerNameEnglish(0)}]" DataTable="[dt_TitleDeedOwnerNames]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="452,212" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                  <ui:AddDataRow ArrayRow="[{getOwnerNameEnglish(0)}]" DataRow="{x:Null}" DataTable="[dt_TitleDeedOwnerNames]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="452,212" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
                 </Sequence>
               </If.Then>
               <If.Else>
@@ -266,7 +269,7 @@ Select(Function(m) System.Text.RegularExpressions.Regex.Replace(
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEach x:TypeArguments="scg:List(x:String)" CurrentIndex="{x:Null}" DisplayName="For Each currentListOfText" sap:VirtualizedContainerService.HintSize="452,394" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[getOwnerNameEnglish]">
+                  <ui:ForEach x:TypeArguments="scg:List(x:String)" CurrentIndex="{x:Null}" DisplayName="For Each currentListOfText" sap:VirtualizedContainerService.HintSize="452,394" sap2010:WorkflowViewState.IdRef="ForEach`1_2" MaxIterations="{x:Null}" Values="[getOwnerNameEnglish]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="scg:List(x:String)">
                         <ActivityAction.Argument>
@@ -278,7 +281,7 @@ Select(Function(m) System.Text.RegularExpressions.Regex.Replace(
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{currentListOfText}]" DataTable="[dt_TitleDeedOwnerNames]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,212" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                          <ui:AddDataRow ArrayRow="[{currentListOfText}]" DataRow="{x:Null}" DataTable="[dt_TitleDeedOwnerNames]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,212" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                         </Sequence>
                       </ActivityAction>
                     </ui:ForEach.Body>
