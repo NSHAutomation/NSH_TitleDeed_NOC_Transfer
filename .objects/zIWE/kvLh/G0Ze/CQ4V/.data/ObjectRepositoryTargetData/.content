@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4-ZRR2fo5k-ek6qT9g0o2w" Reference="2ndl-ObV5kmdLRbmcN62Zg/CQ4VvR50zECt0ix5l6pX1w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://oqood.dubailand.gov.ae/ConfigurationManagement/Property/ContractSearchList.aspx?DwOKomoHY4SzjOUNSYSUknh1J3t6aPzekRTjljE1LGd2d11M3ktjfhp1npIxrHt3id0dcpePAwILlRobV98GTg%3d%3d" DesignTimeRectangle="533, -707, 878, 1601" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="c98b8027-962b-4ed0-adaf-5798ca5c494f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='oqood.dubailand.gov.ae/ConfigurationManagement/Property/ContractSearchList.aspx?DwOKomoHY4SzjOUNSYSUknh1J3t6aPzekRTjljE1LGd2d11M3ktjfhp1npIxrHt3id0dcpePAwILlRobV98GTg%3d%3d' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e69fb0cdbc123a9c62769facbec911d7.jpg" xmlns="">0ZIC4tYmBcEmMXiSAUFCAdw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ForEachUiElement</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='currentCard'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataNextLink' /&gt;
+&lt;/Table&gt;</p:InArgument>
+    <TargetAnchorable x:Key="NextLinkTarget" BrowserURL="oqood.dubailand.gov.ae/ConfigurationManagement/Property/ContractSearchList.aspx" DesignTimeRectangle="961, 774, 39, 33" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='aspnetForm' tag='A' alternatetext='Next' /&gt;" Guid="865d699c-1fa7-48e5-b0d0-f588a6c528fd" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='oqood.dubailand.gov.ae/ConfigurationManagement/Property/ContractSearchList.aspx?DwOKomoHY4SzjOUNSYSUknh1J3t6aPzekRTjljE1LGd2d11M3ktjfhp1npIxrHt3id0dcpePAwILlRobV98GTg%3d%3d' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="0" Y="0" />
+      </TargetAnchorable.PointOffset>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

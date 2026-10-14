@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="txcsqgUc1Uiluktrtlwftw" Reference="2ndl-ObV5kmdLRbmcN62Zg/QdKeXDt-p02X6UOD_59VGQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com" DesignTimeRectangle="321, 490, 338, 43" ElementType="InputBox" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl id='username' type='email' aaname='Username' /&gt;" Guid="5eecf62f-fea9-4dc0-8041-12f2bde95cf0" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='* | Salesforce' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="78f81ee5a9520fe82b9ac0790e4c4fa9.jpg" xmlns="">0Dkhg1N44TkSWdMCWGS90TQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

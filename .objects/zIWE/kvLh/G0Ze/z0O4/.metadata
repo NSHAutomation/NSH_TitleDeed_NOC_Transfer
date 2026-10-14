@@ -1,0 +1,17 @@
+﻿{
+  "Name": "TABLE PropertyOwner-Villa",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "z0O49AtldEayxzI2acmDEg",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/z0O49AtldEayxzI2acmDEg",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/G0ZecurWH0m-tieKFkBDJw",
+  "Created": "2026-09-01T08:52:42.0266024Z",
+  "Updated": "2026-09-01T08:53:16.7856766Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uVDCQXe-gkuK3dgK3AmyfQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/home/home.jsp" DesignTimeRectangle="1436, 152, 130, 24" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='userNavButton' tag='DIV' class='menuButtonButton' /&gt;" Guid="53659692-2967-40de-a020-219b3c00adbb" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="910f5cd23f24132f3c41b2c7704f6cd6.jpg" xmlns="">0h9MylcK_m0G1EWcHBkA-sA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

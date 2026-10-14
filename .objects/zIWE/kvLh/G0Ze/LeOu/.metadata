@@ -1,0 +1,17 @@
+﻿{
+  "Name": "CertifivateNumber",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "LeOuze8UWUqe_4G54ISmcw",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/LeOuze8UWUqe_4G54ISmcw",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/G0ZecurWH0m-tieKFkBDJw",
+  "Created": "2026-08-27T20:49:40.1645753Z",
+  "Updated": "2026-08-27T20:50:34.29061Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

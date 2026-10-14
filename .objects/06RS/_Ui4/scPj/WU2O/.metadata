@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Del",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "WU2OoeFt5U2PtkstHE_prA",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/WU2OoeFt5U2PtkstHE_prA",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
+  "Created": "2026-09-14T11:30:22.4864426Z",
+  "Updated": "2026-09-14T11:30:22.4864426Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

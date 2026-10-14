@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="28BS4o1bEUGzzy5BUjeXDw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="oqood.dubailand.gov.ae/certificates/(S(pwdjjxci5mmqwvysuo1zkb2h))/PrintTitleDeed.aspx" DesignTimeRectangle="150, 96, 162, 14" ElementType="DropDown" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl tag='SELECT' aaname='' /&gt;" Guid="a0167629-7295-4a9e-863e-9d784b86ae08" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='oqood.dubailand.gov.ae/certificates/(S(pwdjjxci5mmqwvysuo1zkb2h))/PrintTitleDeed.aspx?Im%2fzMa4E%2bjGpt5FIDOSVpPQXhTWFiLBIUim%2bQ8NRaLg%3d' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="437e17b8e77a30784d035e93d123d749.jpg" xmlns="">0uyH7bCuJvUy4wazt3gBKLA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

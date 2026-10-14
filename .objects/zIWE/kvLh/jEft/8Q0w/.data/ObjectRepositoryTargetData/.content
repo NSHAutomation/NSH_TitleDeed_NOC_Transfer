@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Slc0YxX4tkGO-EHqdltrKw" Reference="2ndl-ObV5kmdLRbmcN62Zg/8Q0wq5CTDEO0uJtokrDHgQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="oqood.dubailand.gov.ae/certificates/(S(pwdjjxci5mmqwvysuo1zkb2h))/PrintTitleDeed.aspx" DesignTimeRectangle="136, 399, 495, 17" ElementType="InputBox" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;wnd cls='ComboBox' /&gt;&lt;wnd cls='Edit' aaname='File name:' /&gt;" Guid="d205a217-7a40-4fd1-b53c-4a785d7ed393" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='*' title='Save As' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="b5c2502c713efe0de7ceb2a3f14e78c3.jpg" xmlns="">01h3BZNiyl0SdZJ6BFwocnw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

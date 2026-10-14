@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qBI90FtKnU6B9IDb1GZltA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com/500VH00001Fc6Y0YAJ" DesignTimeRectangle="760, 139, 416, 18" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;ctrl name='nshama.my.salesforce.com says' matching:name='fuzzy' fuzzylevel:name='0.0' role='dialog' /&gt;&lt;ctrl name='Can&amp;apos;t proceed , Error Happened' matching:name='fuzzy' fuzzylevel:name='0.0' role='text' check:text='Can&amp;apos;t proceed , Error Happened' /&gt;" Guid="74843ee7-c97c-43e7-b1ea-c213c5a4b4c5" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="760, 101, 416, 22" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;ctrl name='nshama.my.salesforce.com says' matching:name='fuzzy' fuzzylevel:name='0.0' role='dialog' /&gt;&lt;ctrl name='nshama.my.salesforce.com says' matching:name='fuzzy' fuzzylevel:name='0.0' role='grouping' automationid='' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='nshama.my.salesforce.com says' /&gt;" Guid="1d3e21f3-ac38-432c-90f5-2c8de18feffe" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="07d8179a78f2f9b3dd1385ca6c538f07.jpg" xmlns="">0yRQeVrUC-E2Gv7vn9N6TFg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

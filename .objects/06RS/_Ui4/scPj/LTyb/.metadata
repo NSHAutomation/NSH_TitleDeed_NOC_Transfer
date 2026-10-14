@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Pending Original Transf…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "LTybyTPh-Ei_1nk3M5po0w",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/LTybyTPh-Ei_1nk3M5po0w",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
+  "Created": "2026-08-27T07:43:19.4265138Z",
+  "Updated": "2026-08-27T07:43:19.4265138Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

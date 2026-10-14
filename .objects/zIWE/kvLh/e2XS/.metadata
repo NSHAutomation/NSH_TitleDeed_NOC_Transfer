@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Chrome  Oqood",
+  "Type": "Screen",
+  "Id": "e2XSulnpXkmetjoXPKJjhA",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/e2XSulnpXkmetjoXPKJjhA",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/kvLhQ7si3kmCYEECBtfw0Q",
+  "Created": "2026-08-27T09:47:25.7969105Z",
+  "Updated": "2026-08-27T09:48:03.9728016Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

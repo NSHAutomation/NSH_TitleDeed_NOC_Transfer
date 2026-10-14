@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Close Case",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "JxkDdUrw4EWPJ8aED4VL4A",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/JxkDdUrw4EWPJ8aED4VL4A",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
+  "Created": "2026-09-03T10:01:13.7144571Z",
+  "Updated": "2026-09-03T10:01:13.7144571Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

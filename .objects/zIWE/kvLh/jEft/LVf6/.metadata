@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Export to the selected …",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "LVf63iFYXkewCgfR4oJNHw",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/LVf63iFYXkewCgfR4oJNHw",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/jEftsOyMBUy5LUTw68cQAg",
+  "Created": "2026-08-29T13:59:54.1189808Z",
+  "Updated": "2026-08-29T13:59:54.1189808Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

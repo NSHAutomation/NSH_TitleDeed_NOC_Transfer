@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AVmU9nEgok60P9LixSHhBQ" Reference="2ndl-ObV5kmdLRbmcN62Zg/7uqmtqSw50uRNzaC8Umchw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="oqood.dubailand.gov.ae/ConfigurationManagement/Property/ContractSearchList.aspx" DesignTimeRectangle="688, 674, 77, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;ctrl name='{0}' role='link' aastate='focusable, linked, opaque' /&gt;&quot;,certificateNumber)]" Guid="152fdfeb-a924-4f80-9577-9c6947e5dc38" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' title='oqood.dubailand.gov.ae/*' /&gt;" SearchSteps="Selector" SelectionStrategy="AA" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1739104eb44a1c4878d9b158b49d0a57.jpg" xmlns="">0z5AF7p_zx0q9tTTX3YX9BA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

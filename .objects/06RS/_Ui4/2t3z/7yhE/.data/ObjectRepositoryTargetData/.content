@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Edo-1gpA6EKKBz-14JJQlA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.lightning.force.com/lightning/page/home" DesignTimeRectangle="1853, 180, 32, 30" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl tag='DIV' visibleinnertext='View profile' /&gt;&lt;webctrl tag='SPAN' class='uiImage' /&gt;" Guid="f73be797-19e2-45d4-bd34-8c781e59bee5" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Salesforce*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="3ea89e56480530da0e025ee5c8bc982c.jpg" xmlns="">0yYBbm3hjeU-IomFk9zKJtw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

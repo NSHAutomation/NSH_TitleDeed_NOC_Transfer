@@ -1,0 +1,17 @@
+﻿{
+  "Name": "TABLE SearchResult-Unit",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "D9NwCGMSpUeT4iGXATULew",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/D9NwCGMSpUeT4iGXATULew",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/G0ZecurWH0m-tieKFkBDJw",
+  "Created": "2026-08-31T13:50:13.4683551Z",
+  "Updated": "2026-09-01T08:29:50.8279681Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

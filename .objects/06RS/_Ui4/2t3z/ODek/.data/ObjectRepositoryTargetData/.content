@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DilxLgo4LEWWGcdgEpeJAA" Reference="2ndl-ObV5kmdLRbmcN62Zg/ODek2cw_TUysm321iVetZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nshama.my.salesforce.com" DesignTimeRectangle="321, 574, 338, 43" ElementType="InputBoxPassword" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl id='password' type='password' aaname='Password' /&gt;" Guid="e1234cdd-813f-44fd-97a2-e3d0834a33cc" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='* | Salesforce' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="14d9c0afcfcac009ecaa1e0b60cc8071.jpg" xmlns="">0CllHEpQmf06M8YJiCIh5hw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

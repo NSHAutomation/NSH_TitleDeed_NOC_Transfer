@@ -1,0 +1,17 @@
+﻿{
+  "Name": "CaseNumber",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "dv48S5Y-rkifn0yGTjv_qA",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/dv48S5Y-rkifn0yGTjv_qA",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
+  "Created": "2026-08-29T18:53:33.7560449Z",
+  "Updated": "2026-08-29T18:53:59.2717465Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

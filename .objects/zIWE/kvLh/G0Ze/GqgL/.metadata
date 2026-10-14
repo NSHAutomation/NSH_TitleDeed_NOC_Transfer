@@ -1,0 +1,17 @@
+﻿{
+  "Name": "TABLE-SearchResult-Villa",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "GqgL5uDKfkKN0pwE8GilNg",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/GqgL5uDKfkKN0pwE8GilNg",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/G0ZecurWH0m-tieKFkBDJw",
+  "Created": "2026-09-01T08:30:21.0593309Z",
+  "Updated": "2026-09-01T08:31:35.4624748Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

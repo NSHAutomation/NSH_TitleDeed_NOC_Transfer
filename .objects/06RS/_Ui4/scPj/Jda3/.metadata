@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Close-Can't proceed , Error H…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Jda3l2duCk-aVoGHSuw1ig",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/Jda3l2duCk-aVoGHSuw1ig",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/scPjZ4qPWkqzm442LCvwgA",
+  "Created": "2026-10-13T16:34:56.3710111Z",
+  "Updated": "2026-10-13T16:55:34.3994295Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

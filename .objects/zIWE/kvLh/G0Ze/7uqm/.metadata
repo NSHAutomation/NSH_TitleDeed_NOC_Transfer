@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Getattribute-Certificate State",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "7uqmtqSw50uRNzaC8Umchw",
+  "Reference": "2ndl-ObV5kmdLRbmcN62Zg/7uqmtqSw50uRNzaC8Umchw",
+  "ParentRef": "2ndl-ObV5kmdLRbmcN62Zg/G0ZecurWH0m-tieKFkBDJw",
+  "Created": "2026-09-02T17:54:12.0428521Z",
+  "Updated": "2026-09-02T17:56:22.444807Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
