@@ -103,7 +103,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PDF_ReadMortage" sap:VirtualizedContainerService.HintSize="1530,2011" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PDF_ReadMortage" sap:VirtualizedContainerService.HintSize="1449,2471" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pdfText" />
       <Variable x:TypeArguments="x:String" Name="titleDeedBankName" />
@@ -114,15 +114,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="650,1988" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="650,2448" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="616,1905" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="616,2365" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,1400" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,1860" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -134,14 +134,43 @@
                 <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\CustomerCare\Title Deed - NOC Transfer\Output\&quot;+Date.Now.Year.ToString+&quot;\&quot;+Date.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+Date.Now.ToString(&quot;dd-MMM-yyyy&quot;)+&quot;\&quot;+in_TransactionItem(&quot;Case Number&quot;).tostring+&quot;-&quot;+in_TransactionItem(&quot;Opportunity&quot;).tostring+&quot;_TitleDeed.pdf&quot;]" />
               </ui:ReadPDFText.Item>
             </ui:ReadPDFText>
-            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_1">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[titleDeedBankName]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(System.Text.RegularExpressions.Regex.Match(pdfText,"(?is)Mortgaged\s+in\s+favor\s+of\s*\((.*?)\)").Groups(1).Value,"\s+"," ").Trim.Replace("("," ")]</InArgument>
-              </Assign.Value>
-            </Assign>
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim blk = System.Text.RegularExpressions.Regex.Match(in_pdfText, &quot;Mortgaged\s+in\s+favou?r\s+of(?&lt;b&gt;.*?)Property\s*Type&quot;, System.Text.RegularExpressions.RegexOptions.Singleline Or System.Text.RegularExpressions.RegexOptions.IgnoreCase).Groups(&quot;b&quot;).Value&#xA;&#xA;Dim eng = blk.Split({vbCr, vbLf, ChrW(&amp;H2029)}, StringSplitOptions.RemoveEmptyEntries).Where(Function(s) System.Text.RegularExpressions.Regex.IsMatch(s, &quot;[A-Za-z]&quot;)).Select(Function(s) s.Trim()).ToArray()&#xA;&#xA;Dim joined = System.Text.RegularExpressions.Regex.Replace(String.Join(&quot; &quot;, eng), &quot;-\s+&quot;, &quot;&quot;)&#xA;&#xA;out_bankName = System.Text.RegularExpressions.Regex.Match(joined, &quot;\((.*)\)&quot;).Groups(1).Value.Trim()" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,403" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+              <ui:InvokeCode.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_pdfText">[pdfText]</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_bankName">[titleDeedBankName]</OutArgument>
+              </ui:InvokeCode.Arguments>
+            </ui:InvokeCode>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="650,108" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="616,48" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[titleDeedBankName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(System.Text.RegularExpressions.Regex.Match(pdfText,"(?is)Mortgaged\s+in\s+favor\s+of\s*\((.*?)\)").Groups(1).Value,"\s+"," ").Trim.Replace("("," ")]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
             <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[titleDeedBankName]</OutArgument>
@@ -175,7 +204,27 @@
                 <OutArgument x:TypeArguments="x:String">[in_BankName]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[If(in_BankName.ToLower.Trim = "adcb" OrElse in_BankName.ToLower.Trim = "hsbc", titleDeedBankName, in_BankName)]</InArgument>
+                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(System.Text.RegularExpressions.Regex.Replace(in_BankName,"^a-zA-Z0-9\s",""),"\s+"," ").Trim]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_11">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[in_BankName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">[If(
+in_BankName.ToLower.Trim = "adcb" OrElse 
+in_BankName.ToLower.Trim = "hsbc" OrElse 
+in_BankName.ToLower.Trim = "rak bank" OrElse
+in_BankName.ToLower.Trim.Contains("mashreq al islami finance company pjsc"), 
+	titleDeedBankName, in_BankName
+)]</InArgument>
               </Assign.Value>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -189,7 +238,7 @@
                 <OutArgument x:TypeArguments="x:Boolean">[out_is_BankNameMatched]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:Boolean">[titleDeedBankName.ToLower.Replace(".","").Contains(in_BankName.ToLower)]</InArgument>
+                <InArgument x:TypeArguments="x:Boolean">[titleDeedBankName.ToLower.Replace(".","").Contains(in_BankName.ToLower.Replace(".",""))]</InArgument>
               </Assign.Value>
             </Assign>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Extracting Title Deed Data Successful&quot;]" />
