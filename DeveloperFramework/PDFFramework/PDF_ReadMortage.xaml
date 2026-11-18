@@ -103,7 +103,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PDF_ReadMortage" sap:VirtualizedContainerService.HintSize="1449,2471" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PDF_ReadMortage" sap:VirtualizedContainerService.HintSize="926,2471" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pdfText" />
       <Variable x:TypeArguments="x:String" Name="titleDeedBankName" />
@@ -238,7 +238,7 @@ in_BankName.ToLower.Trim.Contains("mashreq al islami finance company pjsc"),
                 <OutArgument x:TypeArguments="x:Boolean">[out_is_BankNameMatched]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:Boolean">[titleDeedBankName.ToLower.Replace(".","").Contains(in_BankName.ToLower.Replace(".",""))]</InArgument>
+                <InArgument x:TypeArguments="x:Boolean">[titleDeedBankName.ToLower.Replace(".","").Replace("(","").Replace(")","").Contains(in_BankName.ToLower.Replace(".",""))]</InArgument>
               </Assign.Value>
             </Assign>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Extracting Title Deed Data Successful&quot;]" />

@@ -110,7 +110,7 @@
       <AssemblyReference>System.Linq.AsyncEnumerable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PDF_ReadSellPreRegistration_PMT" sap:VirtualizedContainerService.HintSize="1513,3149" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PDF_ReadSellPreRegistration_PMT" sap:VirtualizedContainerService.HintSize="1350,3149" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pdfText" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TitleDeedOwnerNames" />
